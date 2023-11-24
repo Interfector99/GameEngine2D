@@ -164,6 +164,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Libraries\glad\glad.c" />
     <ClCompile Include="..\..\..\Libraries\imgui\imgui.cpp" />
     <ClCompile Include="..\..\..\Libraries\imgui\imgui_demo.cpp" />
     <ClCompile Include="..\..\..\Libraries\imgui\imgui_draw.cpp" />
@@ -172,7 +173,6 @@
     <ClCompile Include="..\..\..\Libraries\imgui\imgui_tables.cpp" />
     <ClCompile Include="..\..\..\Libraries\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp" />
-    <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
