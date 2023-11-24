@@ -13,81 +13,105 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\imgui">
-      <UniqueIdentifier>{2a0fad77-ba3d-44b8-a280-3872e0b137cc}</UniqueIdentifier>
+    <Filter Include="Header Files\Lib">
+      <UniqueIdentifier>{e56b1e4c-1dcb-4918-8a07-3f635ff3fd27}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\imgui">
-      <UniqueIdentifier>{7a0de13b-b118-4c33-91e1-1fd39d7b1461}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\stb_image">
+    <Filter Include="Header Files\Lib\stb_image">
       <UniqueIdentifier>{60ee83a5-7783-4152-9408-34ffb0bc2346}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\stb_image">
+    <Filter Include="Header Files\Lib\imgui">
+      <UniqueIdentifier>{7a0de13b-b118-4c33-91e1-1fd39d7b1461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{fe80c464-a626-4b90-835a-0634549e617d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lib">
+      <UniqueIdentifier>{50a59fde-6adc-4235-8a35-4ef64d8763e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lib\imgui">
+      <UniqueIdentifier>{2a0fad77-ba3d-44b8-a280-3872e0b137cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lib\stb_image">
       <UniqueIdentifier>{05439a65-cd86-439d-9461-ad13c3722b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{c1001641-1a54-4811-bb68-439a70c1f4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{87e162d6-a021-4711-bb3f-d664094d0309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{7cfbf178-38f4-4656-bf51-bb65e0a4793e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Libraries\imgui\imgui.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Libraries\imgui\imgui_demo.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Libraries\imgui\imgui_draw.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Libraries\imgui\imgui_impl_glfw.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Libraries\imgui\imgui_impl_opengl3.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Libraries\imgui\imgui_tables.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Libraries\imgui\imgui_widgets.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp">
-      <Filter>Source Files\stb_image</Filter>
+      <Filter>Source Files\Lib\stb_image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui.cpp">
+      <Filter>Source Files\Lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_demo.cpp">
+      <Filter>Source Files\Lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_draw.cpp">
+      <Filter>Source Files\Lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_impl_glfw.cpp">
+      <Filter>Source Files\Lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_impl_opengl3.cpp">
+      <Filter>Source Files\Lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_tables.cpp">
+      <Filter>Source Files\Lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\Lib\imgui</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Libraries\glad\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\App\App.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Libraries\imgui\imconfig.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imgui.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imgui_impl_glfw.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imgui_impl_opengl3.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imgui_impl_opengl3_loader.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imgui_internal.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imstb_rectpack.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imstb_textedit.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Libraries\imgui\imstb_truetype.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Libraries\stb_image\stb_image.h">
-      <Filter>Header Files\stb_image</Filter>
+      <Filter>Header Files\Lib\stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imconfig.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imgui.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imgui_impl_glfw.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imgui_impl_opengl3.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imgui_internal.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_rectpack.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_textedit.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_truetype.h">
+      <Filter>Header Files\Lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\App\App.hpp">
+      <Filter>Header Files\App</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

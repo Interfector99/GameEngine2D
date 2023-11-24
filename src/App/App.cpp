@@ -1,35 +1,6 @@
-#include"imgui.h"
-#include"imgui_impl_glfw.h"
-#include"imgui_impl_opengl3.h"
+#include "App/App.hpp"
 
-#include<iostream>
-#include<glad/glad.h>
-#include<GLFW/glfw3.h>
-
-#include <assimp/Importer.hpp>
-
-#include<glm/vec2.hpp>
-
-// Vertex Shader source code
-const char* vertexShaderSource = "#version 460 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"uniform float size;\n"
-"void main()\n"
-"{\n"
-"   gl_Position = vec4(size * aPos.x, size * aPos.y, size * aPos.z, 1.0);\n"
-"}\0";
-//Fragment Shader source code
-const char* fragmentShaderSource = "#version 460 core\n"
-"out vec4 FragColor;\n"
-"uniform vec4 color;\n"
-"void main()\n"
-"{\n"
-"   FragColor = color;\n"
-"}\n\0";
-
-
-
-int main()
+App::App(const char* vs, const char* fs)
 {
 	// Initialize GLFW
 	glfwInit();
@@ -49,7 +20,7 @@ int main()
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();
-		return -1;
+		return;
 	}
 	// Introduce the window into the current context
 	glfwMakeContextCurrent(window);
@@ -65,14 +36,14 @@ int main()
 	// Create Vertex Shader Object and get its reference
 	GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	// Attach Vertex Shader source to the Vertex Shader Object
-	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
+	glShaderSource(vertexShader, 1, &vs, NULL);
 	// Compile the Vertex Shader into machine code
 	glCompileShader(vertexShader);
 
 	// Create Fragment Shader Object and get its reference
 	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
 	// Attach Fragment Shader source to the Fragment Shader Object
-	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
+	glShaderSource(fragmentShader, 1, &fs, NULL);
 	// Compile the Vertex Shader into machine code
 	glCompileShader(fragmentShader);
 
@@ -153,7 +124,7 @@ int main()
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
 
-		
+
 
 		// Tell OpenGL which Shader Program we want to use
 		glUseProgram(shaderProgram);
@@ -205,5 +176,14 @@ int main()
 	glfwDestroyWindow(window);
 	// Terminate GLFW before ending the program
 	glfwTerminate();
-	return 0;
+}
+
+void App::run()
+{
+
+}
+
+void App::destroy()
+{
+
 }
