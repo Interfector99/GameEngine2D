@@ -1,8 +1,8 @@
 #ifndef IMESSAGEROUTER_HPP
 #define IMESSAGEROUTER_HPP
 
-// Parent classess
-#include "Application/IApplication.hpp"
+// Parent classess as forward declaration
+class IApplication;
 
 // Interface classess
 
@@ -32,8 +32,6 @@
 class IMessageRouter
 {
 protected:
-	IApplication* p_Application; // Non-owning pointer to parent Application
-	std::vector<std::shared_ptr<IManager>> v_Managers;
 public:
 	virtual ~IMessageRouter() = default;
 	// ---------------------------------------

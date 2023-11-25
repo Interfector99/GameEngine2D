@@ -1,8 +1,7 @@
 #ifndef MESSAGEROUTER_HPP
 #define MESSAGEROUTER_HPP
 
-// Parent classess
-#include "Application/Application.hpp"
+// Parent classess as forward declarations
 
 // Interface classess
 #include "IMessageRouter.hpp"
@@ -31,6 +30,8 @@
 class MessageRouter : public IMessageRouter
 {
 private:
+	IApplication* p_Application; // Non-owning pointer to parent Application
+	std::vector<std::shared_ptr<IManager>> v_Managers;
 public:
 	MessageRouter(IApplication* p_Application);
 	~MessageRouter() override;

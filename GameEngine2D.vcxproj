@@ -209,7 +209,6 @@
     <ClInclude Include="include\Application\IApplication.hpp" />
     <ClInclude Include="include\Managers\GraphicsManager\GraphicsManager.hpp" />
     <ClInclude Include="include\Managers\IManager.hpp" />
-    <ClInclude Include="include\Managers\Manager.hpp" />
     <ClInclude Include="include\MessageRouter\IMessageRouter.hpp" />
     <ClInclude Include="include\MessageRouter\MessageRouter.hpp" />
   </ItemGroup>

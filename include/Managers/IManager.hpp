@@ -1,13 +1,14 @@
 #ifndef IMANAGER_HPP
 #define IMANAGER_HPP
 
-// Parent classess
-#include "MessageRouter/IMessageRouter.hpp"
+// Parent classess as forward declaration
+class IMessageRouter;
 
 // Interface classess
 
 // Child classess
-// 
+/* Nothing will be here */
+
 // C++ modules
 #include <iostream>
 #include <memory>
@@ -25,7 +26,7 @@
 class IManager
 {
 protected:
-	IMessageRouter* p_MessageRouter; // Non-owning pointer to parent MessageRouter
+	
 public:
 	virtual ~IManager() = default;
 	// ---------------------------------------

@@ -149,9 +149,6 @@
     <ClInclude Include="include\Managers\IManager.hpp">
       <Filter>Header Files\Src\Managers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Managers\Manager.hpp">
-      <Filter>Header Files\Src\Managers</Filter>
-    </ClInclude>
     <ClInclude Include="include\Managers\GraphicsManager\GraphicsManager.hpp">
       <Filter>Header Files\Src\Managers\GraphicsManager</Filter>
     </ClInclude>
