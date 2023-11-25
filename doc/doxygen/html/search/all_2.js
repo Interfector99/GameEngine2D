@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['design_0',['Design',['../_main_8cpp.html#design',1,'']]],
-  ['destroy_1',['destroy',['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()']]],
-  ['displaymanager_2ecpp_2',['DisplayManager.cpp',['../_display_manager_8cpp.html',1,'']]],
-  ['displaymanager_2ehpp_3',['DisplayManager.hpp',['../_display_manager_8hpp.html',1,'']]],
-  ['does_4',['What it does',['../_main_8cpp.html#what_it_does',1,'']]]
+  ['configloader_2ecpp_0',['ConfigLoader.cpp',['../_config_loader_8cpp.html',1,'']]],
+  ['configloader_2ehpp_1',['ConfigLoader.hpp',['../_config_loader_8hpp.html',1,'']]]
 ];

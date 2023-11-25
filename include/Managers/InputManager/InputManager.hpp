@@ -11,6 +11,9 @@
 
 // C++ modules
 
+// Library modules
+#include <GLFW/glfw3.h>
+
 class InputManager : public IManager
 {
 private:

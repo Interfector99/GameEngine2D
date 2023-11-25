@@ -26,16 +26,16 @@
  * Implements a pipeline: Creation -> Initialization -> Run -> Finish -> Destroy.
  */
 
-enum class STATE
-{
-	ON,
-	RUNNING,
-	OFF
-};
-
 class IApplication
 {
+private:
 protected:
+	enum class STATE
+	{
+		ON,
+		RUNNING,
+		OFF
+	};
 	STATE m_State;
 	std::shared_ptr<IMessageRouter> p_MessageRouter;
 public:

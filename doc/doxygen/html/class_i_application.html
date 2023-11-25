@@ -72,6 +72,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_i_application-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">IApplication Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
@@ -106,13 +107,49 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1fef7fa7c54bd81c2fd56266afb1380" id="r_ad1fef7fa7c54bd81c2fd56266afb1380"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#ad1fef7fa7c54bd81c2fd56266afb1380">receiveMessage</a> (std::string sender, std::string message)=0</td></tr>
 <tr class="separator:ad1fef7fa7c54bd81c2fd56266afb1380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:ac5dbde16d92ed16db8a3960cb90284c1" id="r_ac5dbde16d92ed16db8a3960cb90284c1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1">STATE</a> { <a class="el" href="class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1a90651ebea9a35ec4e018c8157492e17c">ON</a>
+, <a class="el" href="class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1a43491564ebcfd38568918efbd6e840fd">RUNNING</a>
+, <a class="el" href="class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1a88559a0cfd8250c9d65970cc145c92d4">OFF</a>
+ }</td></tr>
+<tr class="separator:ac5dbde16d92ed16db8a3960cb90284c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a841d5d1d9049d0bfe4264cbcf8d47896" id="r_a841d5d1d9049d0bfe4264cbcf8d47896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_i_application_8hpp.html#a275a67132f10277ada3a0ee3d616b647">STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#a841d5d1d9049d0bfe4264cbcf8d47896">m_State</a></td></tr>
+<tr class="memitem:a841d5d1d9049d0bfe4264cbcf8d47896" id="r_a841d5d1d9049d0bfe4264cbcf8d47896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1">STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#a841d5d1d9049d0bfe4264cbcf8d47896">m_State</a></td></tr>
 <tr class="separator:a841d5d1d9049d0bfe4264cbcf8d47896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb83e9254204300f4f643ca74b89f50" id="r_a8fb83e9254204300f4f643ca74b89f50"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_i_message_router.html">IMessageRouter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#a8fb83e9254204300f4f643ca74b89f50">p_MessageRouter</a></td></tr>
 <tr class="separator:a8fb83e9254204300f4f643ca74b89f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ac5dbde16d92ed16db8a3960cb90284c1" name="ac5dbde16d92ed16db8a3960cb90284c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5dbde16d92ed16db8a3960cb90284c1">&#9670;&#160;</a></span>STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1">IApplication::STATE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac5dbde16d92ed16db8a3960cb90284c1a90651ebea9a35ec4e018c8157492e17c" name="ac5dbde16d92ed16db8a3960cb90284c1a90651ebea9a35ec4e018c8157492e17c"></a>ON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac5dbde16d92ed16db8a3960cb90284c1a43491564ebcfd38568918efbd6e840fd" name="ac5dbde16d92ed16db8a3960cb90284c1a43491564ebcfd38568918efbd6e840fd"></a>RUNNING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac5dbde16d92ed16db8a3960cb90284c1a88559a0cfd8250c9d65970cc145c92d4" name="ac5dbde16d92ed16db8a3960cb90284c1a88559a0cfd8250c9d65970cc145c92d4"></a>OFF&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a81859b4bfb89d53ba851789c806af299" name="a81859b4bfb89d53ba851789c806af299"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81859b4bfb89d53ba851789c806af299">&#9670;&#160;</a></span>~IApplication()</h2>
@@ -335,7 +372,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_i_application_8hpp.html#a275a67132f10277ada3a0ee3d616b647">STATE</a> IApplication::m_State</td>
+          <td class="memname"><a class="el" href="class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1">STATE</a> IApplication::m_State</td>
         </tr>
       </table>
   </td>
