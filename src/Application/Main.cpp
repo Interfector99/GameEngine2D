@@ -4,7 +4,7 @@
 
 int main()
 {
-	Application application = Application();
+	Application application;
 	application.run();
 	application.destroy();
 	return 0;

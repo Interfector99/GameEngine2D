@@ -2,7 +2,7 @@
 
 Application::Application()
 {
-	this->state = ON;
+	this->state = STATE::ON;
 	std::cout << "App started" << std::endl;
 }
 
@@ -13,6 +13,12 @@ void Application::run()
 
 void Application::destroy()
 {
-	this->state = OFF;
+	this->state = STATE::OFF;
 	std::cout << "App finished" << std::endl;
+}
+
+Application::~Application()
+{
+	this->state = STATE::OFF;
+	std::cout << "App destructed" << std::endl;
 }

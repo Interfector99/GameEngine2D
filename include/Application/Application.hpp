@@ -12,6 +12,7 @@ public:
 	Application();
 	void run() override;
 	void destroy() override;
+	~Application();
 };
 
 #endif // APPLICATION_HPP
