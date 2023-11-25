@@ -1,7 +1,8 @@
 #ifndef GRAPHICSMANAGER_HPP
 #define GRAPHICSMANAGER_HPP
 
-// Parent classess as forward declarations
+// Parent classess
+#include "MessageRouter/IMessageRouter.hpp"
 
 // Interface classess
 #include "Managers/IManager.hpp"

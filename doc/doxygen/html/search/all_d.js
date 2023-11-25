@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['v_5fmanagers_0',['v_Managers',['../class_i_message_router.html#a160c0501a546301d7f262a2bc6547f3e',1,'IMessageRouter']]]
+  ['what_20it_20does_0',['What it does',['../_main_8cpp.html#what_it_does',1,'']]],
+  ['what_20it_20is_1',['What it is',['../_main_8cpp.html#what_it_is',1,'']]]
 ];

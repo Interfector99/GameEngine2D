@@ -1,8 +1,7 @@
 #ifndef IMESSAGEROUTER_HPP
 #define IMESSAGEROUTER_HPP
 
-// Parent classess as forward declaration
-class IApplication;
+// Parent classess
 
 // Interface classess
 

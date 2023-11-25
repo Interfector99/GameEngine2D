@@ -1,7 +1,8 @@
 #ifndef MESSAGEROUTER_HPP
 #define MESSAGEROUTER_HPP
 
-// Parent classess as forward declarations
+// Parent classess
+#include "Application/IApplication.hpp"
 
 // Interface classess
 #include "IMessageRouter.hpp"

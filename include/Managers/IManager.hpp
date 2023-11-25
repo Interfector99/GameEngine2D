@@ -1,8 +1,7 @@
 #ifndef IMANAGER_HPP
 #define IMANAGER_HPP
 
-// Parent classess as forward declaration
-class IMessageRouter;
+// Parent classess
 
 // Interface classess
 
