@@ -4,7 +4,7 @@ MessageRouter::MessageRouter(IApplication* p_Application)
 {
 	std::cout << "  MessageRouter instance created" << std::endl;
 	this->v_Managers = std::vector<std::shared_ptr<IManager>>();
-	this->v_Managers.push_back(std::make_shared<GraphicsManager>(this));
+	this->v_Managers.push_back(std::make_shared<InputManager>(this));
 	this->p_Application = p_Application;
 }
 

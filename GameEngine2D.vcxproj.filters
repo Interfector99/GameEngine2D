@@ -61,6 +61,12 @@
     <Filter Include="Source Files\Src\Managers\GraphicsManager">
       <UniqueIdentifier>{597df0ff-8abe-451a-898a-9feb48261090}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Src\Managers\InputManager">
+      <UniqueIdentifier>{292ac071-a874-4152-aa6f-f448ae51ee4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Src\Managers\InputManager">
+      <UniqueIdentifier>{32e9af9e-a43f-43a0-9734-069097b7e693}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp">
@@ -101,6 +107,9 @@
     </ClCompile>
     <ClCompile Include="src\Managers\GraphicsManager\GraphicsManager.cpp">
       <Filter>Source Files\Src\Managers\GraphicsManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Managers\InputManager\InputManager.cpp">
+      <Filter>Source Files\Src\Managers\InputManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="include\Managers\GraphicsManager\GraphicsManager.hpp">
       <Filter>Header Files\Src\Managers\GraphicsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Managers\InputManager\InputManager.hpp">
+      <Filter>Header Files\Src\Managers\InputManager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

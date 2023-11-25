@@ -192,6 +192,7 @@
     <ClCompile Include="src\Application\Application.cpp" />
     <ClCompile Include="src\Application\Main.cpp" />
     <ClCompile Include="src\Managers\GraphicsManager\GraphicsManager.cpp" />
+    <ClCompile Include="src\Managers\InputManager\InputManager.cpp" />
     <ClCompile Include="src\MessageRouter\MessageRouter.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +210,7 @@
     <ClInclude Include="include\Application\IApplication.hpp" />
     <ClInclude Include="include\Managers\GraphicsManager\GraphicsManager.hpp" />
     <ClInclude Include="include\Managers\IManager.hpp" />
+    <ClInclude Include="include\Managers\InputManager\InputManager.hpp" />
     <ClInclude Include="include\MessageRouter\IMessageRouter.hpp" />
     <ClInclude Include="include\MessageRouter\MessageRouter.hpp" />
   </ItemGroup>

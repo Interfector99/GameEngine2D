@@ -36,6 +36,7 @@ void Application::run()
 
 	m_State = STATE::RUNNING;
 	isRunning = true;
+
 	while (isRunning)
 	{
 		int randomNumber = std::rand() % 1001;

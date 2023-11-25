@@ -8,6 +8,7 @@
 #include "IMessageRouter.hpp"
 
 // Child classess
+#include "Managers/InputManager/InputManager.hpp"
 #include "Managers/GraphicsManager/GraphicsManager.hpp"
 
 // C++ modules
