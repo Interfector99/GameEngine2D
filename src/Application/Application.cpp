@@ -2,23 +2,28 @@
 
 Application::Application()
 {
-	this->state = STATE::ON;
-	std::cout << "App started" << std::endl;
+	std::cout << "Application instance created" << std::endl;
+}
+
+void Application::init()
+{
+	std::cout << "Application instance initialized" << std::endl;
+	p_MessageRouter = new MessageRouter();
 }
 
 void Application::run()
 {
-	std::cout << "App running" << std::endl;
+	std::cout << "Application instance running" << std::endl;
 }
 
-void Application::destroy()
-{
-	this->state = STATE::OFF;
-	std::cout << "App finished" << std::endl;
+void Application::finish()
+{	
+	delete p_MessageRouter;
+	std::cout << "Application instance finished" << std::endl;
 }
 
 Application::~Application()
 {
-	this->state = STATE::OFF;
-	std::cout << "App destructed" << std::endl;
+	delete p_MessageRouter;
+	std::cout << "Application instance destroyed" << std::endl;
 }
