@@ -37,8 +37,8 @@ public:
 	MessageRouter(IApplication* p_Application);
 	~MessageRouter() override;
 	// ---------------------------------------
-	void sendMessage(std::string message) override;
-	void receiveMessage(std::string message) override;
+	void sendMessage(std::string receiver, std::string message) override;
+	void receiveMessage(std::string sender, std::string message) override;
 };
 
 #endif // MESSAGEROUTER_HPP

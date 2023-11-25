@@ -92,10 +92,10 @@ Inheritance diagram for IManager:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a202714648a0d1845f9bc12c684f63031" id="r_a202714648a0d1845f9bc12c684f63031"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#a202714648a0d1845f9bc12c684f63031">~IManager</a> ()=default</td></tr>
 <tr class="separator:a202714648a0d1845f9bc12c684f63031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adece8b70bbb20fcaa82ca7cea44e84ef" id="r_adece8b70bbb20fcaa82ca7cea44e84ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#adece8b70bbb20fcaa82ca7cea44e84ef">sendMessage</a> (std::string message)=0</td></tr>
-<tr class="separator:adece8b70bbb20fcaa82ca7cea44e84ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6576c92a59efab57b63c6433f46950d0" id="r_a6576c92a59efab57b63c6433f46950d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#a6576c92a59efab57b63c6433f46950d0">receiveMessage</a> (std::string message)=0</td></tr>
-<tr class="separator:a6576c92a59efab57b63c6433f46950d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6c7f2df313c3979d84506077821ab3" id="r_aad6c7f2df313c3979d84506077821ab3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#aad6c7f2df313c3979d84506077821ab3">sendMessage</a> (std::string receiver, std::string message)=0</td></tr>
+<tr class="separator:aad6c7f2df313c3979d84506077821ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7733641c112fab0a752ff26e8a6b2d3e" id="r_a7733641c112fab0a752ff26e8a6b2d3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#a7733641c112fab0a752ff26e8a6b2d3e">receiveMessage</a> (std::string sender, std::string message)=0</td></tr>
+<tr class="separator:a7733641c112fab0a752ff26e8a6b2d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a202714648a0d1845f9bc12c684f63031" name="a202714648a0d1845f9bc12c684f63031"></a>
@@ -124,8 +124,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6576c92a59efab57b63c6433f46950d0" name="a6576c92a59efab57b63c6433f46950d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6576c92a59efab57b63c6433f46950d0">&#9670;&#160;</a></span>receiveMessage()</h2>
+<a id="a7733641c112fab0a752ff26e8a6b2d3e" name="a7733641c112fab0a752ff26e8a6b2d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7733641c112fab0a752ff26e8a6b2d3e">&#9670;&#160;</a></span>receiveMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,8 +137,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void IManager::receiveMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -148,12 +158,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_graphics_manager.html#af17d1351b5ec38a8fc01298c1b7ed753">GraphicsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_graphics_manager.html#abac67d45c3e654ecfbaeb0d2e89d422c">GraphicsManager</a>.</p>
 
 </div>
 </div>
-<a id="adece8b70bbb20fcaa82ca7cea44e84ef" name="adece8b70bbb20fcaa82ca7cea44e84ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adece8b70bbb20fcaa82ca7cea44e84ef">&#9670;&#160;</a></span>sendMessage()</h2>
+<a id="aad6c7f2df313c3979d84506077821ab3" name="aad6c7f2df313c3979d84506077821ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad6c7f2df313c3979d84506077821ab3">&#9670;&#160;</a></span>sendMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,8 +175,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void IManager::sendMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>receiver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -176,7 +196,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_graphics_manager.html#ac4e0d83d43f11a480d0c5494ef23361c">GraphicsManager</a>.</p>
+<p>Implemented in <a class="el" href="class_graphics_manager.html#ab33c1ca865a0afefe9fe10dc2a140f23">GraphicsManager</a>.</p>
 
 </div>
 </div>

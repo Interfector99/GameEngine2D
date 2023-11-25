@@ -42,7 +42,8 @@ public:
 	void run() override;
 	void finish() override;
 	// ---------------------------------------
-	void receiveMessage(std::string message) override;
+	void sendMessage(std::string receiver,std::string message) override;
+	void receiveMessage(std::string sender, std::string message) override;
 };
 
 #endif // APPLICATION_HPP

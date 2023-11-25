@@ -101,8 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a89be99fa4c296edc38dd8b4bc015c377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f57eca580b7e02959801f0ced020eb4" id="r_a7f57eca580b7e02959801f0ced020eb4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#a7f57eca580b7e02959801f0ced020eb4">finish</a> ()=0</td></tr>
 <tr class="separator:a7f57eca580b7e02959801f0ced020eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d352bc0a1bd00e497c6c68c535566b5" id="r_a3d352bc0a1bd00e497c6c68c535566b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#a3d352bc0a1bd00e497c6c68c535566b5">receiveMessage</a> (std::string message)=0</td></tr>
-<tr class="separator:a3d352bc0a1bd00e497c6c68c535566b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425de54d6d1f2b66accf5c72e6fce6e4" id="r_a425de54d6d1f2b66accf5c72e6fce6e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#a425de54d6d1f2b66accf5c72e6fce6e4">sendMessage</a> (std::string receiver, std::string message)=0</td></tr>
+<tr class="separator:a425de54d6d1f2b66accf5c72e6fce6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fef7fa7c54bd81c2fd56266afb1380" id="r_ad1fef7fa7c54bd81c2fd56266afb1380"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_application.html#ad1fef7fa7c54bd81c2fd56266afb1380">receiveMessage</a> (std::string sender, std::string message)=0</td></tr>
+<tr class="separator:ad1fef7fa7c54bd81c2fd56266afb1380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -219,8 +221,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3d352bc0a1bd00e497c6c68c535566b5" name="a3d352bc0a1bd00e497c6c68c535566b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d352bc0a1bd00e497c6c68c535566b5">&#9670;&#160;</a></span>receiveMessage()</h2>
+<a id="ad1fef7fa7c54bd81c2fd56266afb1380" name="ad1fef7fa7c54bd81c2fd56266afb1380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1fef7fa7c54bd81c2fd56266afb1380">&#9670;&#160;</a></span>receiveMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,8 +234,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname">virtual void IApplication::receiveMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -243,7 +255,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_application.html#a8bdb4c544ee1b34fef2fef8ad3a6967b">Application</a>.</p>
+<p>Implemented in <a class="el" href="class_application.html#a1f0fe2e16ed142c19657d42a090cc476">Application</a>.</p>
 
 </div>
 </div>
@@ -271,6 +283,44 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_application.html#a6815195c956c091a6558a316f8fd9976">Application</a>.</p>
+
+</div>
+</div>
+<a id="a425de54d6d1f2b66accf5c72e6fce6e4" name="a425de54d6d1f2b66accf5c72e6fce6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a425de54d6d1f2b66accf5c72e6fce6e4">&#9670;&#160;</a></span>sendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IApplication::sendMessage </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>receiver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_application.html#a917eb5838c096cb7095b2a04e798303f">Application</a>.</p>
 
 </div>
 </div>

@@ -34,8 +34,8 @@ protected:
 public:
 	virtual ~IMessageRouter() = default;
 	// ---------------------------------------
-	virtual void sendMessage(std::string message) = 0;
-	virtual void receiveMessage(std::string message) = 0;
+	virtual void sendMessage(std::string receiver, std::string message) = 0;
+	virtual void receiveMessage(std::string sender, std::string message) = 0;
 };
 
 #endif // IMESSAGEROUTER_HPP

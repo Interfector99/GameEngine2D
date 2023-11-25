@@ -29,6 +29,7 @@
 enum class STATE
 {
 	ON,
+	RUNNING,
 	OFF
 };
 
@@ -45,7 +46,8 @@ public:
 	virtual void run() = 0;
 	virtual void finish() = 0;
 	// ---------------------------------------
-	virtual void receiveMessage(std::string message) = 0;
+	virtual void sendMessage(std::string receiver, std::string message) = 0;
+	virtual void receiveMessage(std::string sender, std::string message) = 0;
 };
 
 #endif // IAPPLICATION_HPP

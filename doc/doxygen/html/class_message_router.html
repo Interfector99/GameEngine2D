@@ -94,10 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8f8967907958fbb895f8c49f898976b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb15d083974fd214a0551ba034f76fd8" id="r_abb15d083974fd214a0551ba034f76fd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_message_router.html#abb15d083974fd214a0551ba034f76fd8">~MessageRouter</a> () override</td></tr>
 <tr class="separator:abb15d083974fd214a0551ba034f76fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d58f5a3b7312c3f0b2ec7a24051db10" id="r_a1d58f5a3b7312c3f0b2ec7a24051db10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_message_router.html#a1d58f5a3b7312c3f0b2ec7a24051db10">sendMessage</a> (std::string message) override</td></tr>
-<tr class="separator:a1d58f5a3b7312c3f0b2ec7a24051db10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e3d0a1e6b12dd7d531bbf12739d5962" id="r_a3e3d0a1e6b12dd7d531bbf12739d5962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_message_router.html#a3e3d0a1e6b12dd7d531bbf12739d5962">receiveMessage</a> (std::string message) override</td></tr>
-<tr class="separator:a3e3d0a1e6b12dd7d531bbf12739d5962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9d17cb82279d8ba66c70f0399c4b19" id="r_aed9d17cb82279d8ba66c70f0399c4b19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_message_router.html#aed9d17cb82279d8ba66c70f0399c4b19">sendMessage</a> (std::string receiver, std::string message) override</td></tr>
+<tr class="separator:aed9d17cb82279d8ba66c70f0399c4b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfb40ec6ebcc812ff29528ec7474bc6" id="r_abcfb40ec6ebcc812ff29528ec7474bc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_message_router.html#abcfb40ec6ebcc812ff29528ec7474bc6">receiveMessage</a> (std::string sender, std::string message) override</td></tr>
+<tr class="separator:abcfb40ec6ebcc812ff29528ec7474bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i_message_router"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_message_router')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_message_router.html">IMessageRouter</a></td></tr>
 <tr class="memitem:ad34991464e30105873706ddf2c806be7 inherit pub_methods_class_i_message_router" id="r_ad34991464e30105873706ddf2c806be7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_message_router.html#ad34991464e30105873706ddf2c806be7">~IMessageRouter</a> ()=default</td></tr>
 <tr class="separator:ad34991464e30105873706ddf2c806be7 inherit pub_methods_class_i_message_router"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +147,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3e3d0a1e6b12dd7d531bbf12739d5962" name="a3e3d0a1e6b12dd7d531bbf12739d5962"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e3d0a1e6b12dd7d531bbf12739d5962">&#9670;&#160;</a></span>receiveMessage()</h2>
+<a id="abcfb40ec6ebcc812ff29528ec7474bc6" name="abcfb40ec6ebcc812ff29528ec7474bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfb40ec6ebcc812ff29528ec7474bc6">&#9670;&#160;</a></span>receiveMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,8 +160,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void MessageRouter::receiveMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -171,12 +181,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_i_message_router.html#aa7845e4fe069c92a770414fd5429b3f9">IMessageRouter</a>.</p>
+<p>Implements <a class="el" href="class_i_message_router.html#a943fc30a5264b21c1c7db630dd29a5a7">IMessageRouter</a>.</p>
 
 </div>
 </div>
-<a id="a1d58f5a3b7312c3f0b2ec7a24051db10" name="a1d58f5a3b7312c3f0b2ec7a24051db10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d58f5a3b7312c3f0b2ec7a24051db10">&#9670;&#160;</a></span>sendMessage()</h2>
+<a id="aed9d17cb82279d8ba66c70f0399c4b19" name="aed9d17cb82279d8ba66c70f0399c4b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9d17cb82279d8ba66c70f0399c4b19">&#9670;&#160;</a></span>sendMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,8 +198,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void MessageRouter::sendMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>receiver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -199,7 +219,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_i_message_router.html#adf534d3d9b96609d8aba1d58a68fb306">IMessageRouter</a>.</p>
+<p>Implements <a class="el" href="class_i_message_router.html#acadd284e9b4c1c1f7e10292acbfe64bc">IMessageRouter</a>.</p>
 
 </div>
 </div>

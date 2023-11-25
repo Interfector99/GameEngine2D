@@ -19,8 +19,8 @@ public:
 	GraphicsManager(IMessageRouter* p_MessageRouter);
 	~GraphicsManager() override;
 	// ---------------------------------------
-	void sendMessage(std::string message) override;
-	void receiveMessage(std::string message) override;
+	void sendMessage(std::string receiver, std::string message) override;
+	void receiveMessage(std::string sender, std::string message) override;
 };
 
 #endif // GRAPHICSMANAGER_HPP
