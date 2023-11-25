@@ -4,7 +4,6 @@ InputManager::InputManager(IMessageRouter* p_MessageRouter)
 {
 	std::cout << "    InputManager instance created" << std::endl;
 	this->p_MessageRouter = p_MessageRouter;
-
 }
 
 InputManager::~InputManager()

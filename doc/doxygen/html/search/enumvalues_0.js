@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['keyboard_0',['Keyboard',['../_i_event_8hpp.html#a1d1cfd8ffb84e947f82999c682b666a7a6ce4d85a628a88bbdb3ac24a8e5a9c2e',1,'IEvent.hpp']]]
+  ['off_0',['OFF',['../class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1a88559a0cfd8250c9d65970cc145c92d4',1,'IApplication']]],
+  ['on_1',['ON',['../class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1a90651ebea9a35ec4e018c8157492e17c',1,'IApplication']]]
 ];

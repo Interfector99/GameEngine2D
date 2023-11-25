@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['sendmessage_0',['sendmessage',['../class_application.html#a917eb5838c096cb7095b2a04e798303f',1,'Application::sendMessage()'],['../class_i_application.html#a425de54d6d1f2b66accf5c72e6fce6e4',1,'IApplication::sendMessage()'],['../class_graphics_manager.html#ab33c1ca865a0afefe9fe10dc2a140f23',1,'GraphicsManager::sendMessage()'],['../class_i_manager.html#aad6c7f2df313c3979d84506077821ab3',1,'IManager::sendMessage()'],['../class_input_manager.html#abe72757bfcdb378584aeb8a94fc3ff7b',1,'InputManager::sendMessage()'],['../class_i_message_router.html#acadd284e9b4c1c1f7e10292acbfe64bc',1,'IMessageRouter::sendMessage()'],['../class_message_router.html#aed9d17cb82279d8ba66c70f0399c4b19',1,'MessageRouter::sendMessage()']]]
+  ['_7eapplication_0',['~Application',['../class_application.html#a444b0b6d9162b14d5262b81bd75586df',1,'Application']]],
+  ['_7egraphicsmanager_1',['~GraphicsManager',['../class_graphics_manager.html#a1980d888317c3ceffaafb0170418bb8b',1,'GraphicsManager']]],
+  ['_7eiapplication_2',['~IApplication',['../class_i_application.html#a81859b4bfb89d53ba851789c806af299',1,'IApplication']]],
+  ['_7eimanager_3',['~IManager',['../class_i_manager.html#a202714648a0d1845f9bc12c684f63031',1,'IManager']]],
+  ['_7eimessagerouter_4',['~IMessageRouter',['../class_i_message_router.html#ad34991464e30105873706ddf2c806be7',1,'IMessageRouter']]],
+  ['_7einputmanager_5',['~InputManager',['../class_input_manager.html#ac07b6252aae165bce8f3608d23761ecf',1,'InputManager']]],
+  ['_7emessagerouter_6',['~MessageRouter',['../class_message_router.html#abb15d083974fd214a0551ba034f76fd8',1,'MessageRouter']]]
 ];

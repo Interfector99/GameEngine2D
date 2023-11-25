@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['left_0',['Left',['../_i_event_8hpp.html#a03bfec859eac87be20f8952c1eb89de0a9d4d8b0b72fc2659da772d761a3c5ecb',1,'IEvent.hpp']]]
+  ['off_0',['OFF',['../class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1a88559a0cfd8250c9d65970cc145c92d4',1,'IApplication']]],
+  ['on_1',['ON',['../class_i_application.html#ac5dbde16d92ed16db8a3960cb90284c1a90651ebea9a35ec4e018c8157492e17c',1,'IApplication']]]
 ];

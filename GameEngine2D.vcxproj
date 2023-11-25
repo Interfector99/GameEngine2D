@@ -193,7 +193,6 @@
     <ClCompile Include="src\Application\Main.cpp" />
     <ClCompile Include="src\Managers\GraphicsManager\GraphicsManager.cpp" />
     <ClCompile Include="src\Managers\InputManager\Event\KeyboardEvent.cpp" />
-    <ClCompile Include="src\Managers\InputManager\Event\MouseButtonEvent.cpp" />
     <ClCompile Include="src\Managers\InputManager\Event\MouseEvent.cpp" />
     <ClCompile Include="src\Managers\InputManager\InputManager.cpp" />
     <ClCompile Include="src\MessageRouter\MessageRouter.cpp" />
@@ -215,7 +214,6 @@
     <ClInclude Include="include\Managers\IManager.hpp" />
     <ClInclude Include="include\Managers\InputManager\Event\IEvent.hpp" />
     <ClInclude Include="include\Managers\InputManager\Event\KeyboardEvent.hpp" />
-    <ClInclude Include="include\Managers\InputManager\Event\MouseButtonEvent.hpp" />
     <ClInclude Include="include\Managers\InputManager\Event\MouseEvent.hpp" />
     <ClInclude Include="include\Managers\InputManager\InputManager.hpp" />
     <ClInclude Include="include\MessageRouter\IMessageRouter.hpp" />

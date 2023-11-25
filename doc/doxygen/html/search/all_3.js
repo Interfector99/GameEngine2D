@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['design_0',['Design',['../_main_8cpp.html#design',1,'']]],
-  ['destroy_1',['destroy',['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()'],['../class_app.html#a94b685be79fca20c2dbde22a3469e09b',1,'App::destroy()']]],
-  ['displaymanager_2ecpp_2',['DisplayManager.cpp',['../_display_manager_8cpp.html',1,'']]],
-  ['displaymanager_2ehpp_3',['DisplayManager.hpp',['../_display_manager_8hpp.html',1,'']]],
-  ['does_4',['What it does',['../_main_8cpp.html#what_it_does',1,'']]]
+  ['ecsmanager_2ecpp_0',['EcsManager.cpp',['../_ecs_manager_8cpp.html',1,'']]],
+  ['ecsmanager_2ehpp_1',['EcsManager.hpp',['../_ecs_manager_8hpp.html',1,'']]],
+  ['executepipeline_2',['executepipeline',['../class_application.html#a1dfd469b8e3eb2abfde3551fc30a945d',1,'Application::executePipeline()'],['../class_i_application.html#afbd2000efd0265a55003bfd04c52047f',1,'IApplication::executePipeline()']]]
 ];

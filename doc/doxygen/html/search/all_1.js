@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['button_0',['Button',['../_i_event_8hpp.html#a03bfec859eac87be20f8952c1eb89de0',1,'IEvent.hpp']]]
+  ['configloader_2ecpp_0',['ConfigLoader.cpp',['../_config_loader_8cpp.html',1,'']]],
+  ['configloader_2ehpp_1',['ConfigLoader.hpp',['../_config_loader_8hpp.html',1,'']]]
 ];

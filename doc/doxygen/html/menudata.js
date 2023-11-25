@@ -36,7 +36,6 @@ var menudata={children:[
 {text:"f",url:"functions.html#index_f"},
 {text:"g",url:"functions.html#index_g"},
 {text:"i",url:"functions.html#index_i"},
-{text:"k",url:"functions.html#index_k"},
 {text:"m",url:"functions.html#index_m"},
 {text:"p",url:"functions.html#index_p"},
 {text:"r",url:"functions.html#index_r"},
@@ -49,7 +48,6 @@ var menudata={children:[
 {text:"f",url:"functions_func.html#index_f"},
 {text:"g",url:"functions_func.html#index_g"},
 {text:"i",url:"functions_func.html#index_i"},
-{text:"k",url:"functions_func.html#index_k"},
 {text:"m",url:"functions_func.html#index_m"},
 {text:"r",url:"functions_func.html#index_r"},
 {text:"s",url:"functions_func.html#index_s"},
@@ -60,6 +58,4 @@ var menudata={children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html"},
-{text:"Functions",url:"globals_func.html"},
-{text:"Enumerations",url:"globals_enum.html"},
-{text:"Enumerator",url:"globals_eval.html"}]}]}]}
+{text:"Functions",url:"globals_func.html"}]}]}]}

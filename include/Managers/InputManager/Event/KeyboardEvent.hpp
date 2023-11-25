@@ -1,20 +1,15 @@
 #ifndef KEYBOARDEVENT_HPP
 #define KEYBOARDEVENT_HPP
 
+// Parent classess
+#include "Managers/InputManager/InputManager.hpp"
+
 // Interface classes
 #include "Managers/InputManager/Event/IEvent.hpp"
 
 class KeyboardEvent : public IEvent
 {
-private:
-    int key;
-    Action action;
-public:
-    KeyboardEvent(int key, Action action);
-
-    Type getEventType() override;
-    int getKey();
-    Action getAction();
+	
 };
 
 #endif // KEYBOARDEVENT_HPP

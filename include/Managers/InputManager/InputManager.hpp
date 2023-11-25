@@ -8,16 +8,20 @@
 #include "Managers/IManager.hpp"
 
 // Child classess
+#include "Managers/InputManager/Event/IEvent.hpp"
 
 // C++ modules
+#include<iostream>
+#include<memory>
+#include<vector>
 
 // Library modules
-#include <GLFW/glfw3.h>
 
 class InputManager : public IManager
 {
 private:
 	IMessageRouter* p_MessageRouter; // Non-owning pointer to parent MessageRouter
+	std::vector<std::shared_ptr<IEvent>> v_Events;
 public:
 	InputManager(IMessageRouter* p_MessageRouter);
 	~InputManager() override;

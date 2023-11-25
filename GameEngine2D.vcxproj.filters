@@ -120,9 +120,6 @@
     <ClCompile Include="src\Managers\InputManager\Event\KeyboardEvent.cpp">
       <Filter>Source Files\Src\Managers\InputManager\Event</Filter>
     </ClCompile>
-    <ClCompile Include="src\Managers\InputManager\Event\MouseButtonEvent.cpp">
-      <Filter>Source Files\Src\Managers\InputManager\Event</Filter>
-    </ClCompile>
     <ClCompile Include="src\Managers\InputManager\Event\MouseEvent.cpp">
       <Filter>Source Files\Src\Managers\InputManager\Event</Filter>
     </ClCompile>
@@ -183,9 +180,6 @@
       <Filter>Header Files\Src\Managers\InputManager\Event</Filter>
     </ClInclude>
     <ClInclude Include="include\Managers\InputManager\Event\KeyboardEvent.hpp">
-      <Filter>Header Files\Src\Managers\InputManager\Event</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Managers\InputManager\Event\MouseButtonEvent.hpp">
       <Filter>Header Files\Src\Managers\InputManager\Event</Filter>
     </ClInclude>
     <ClInclude Include="include\Managers\InputManager\Event\MouseEvent.hpp">
