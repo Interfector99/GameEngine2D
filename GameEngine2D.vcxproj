@@ -110,6 +110,9 @@
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -130,6 +133,9 @@
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -146,6 +152,9 @@
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -166,6 +175,9 @@
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Libraries\glad\glad.c" />

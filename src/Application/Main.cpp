@@ -1,21 +1,29 @@
 #include "Application/Application.hpp"
 
-/*
-Main:
-What it is:
-	Just the main function call.
+#include <memory>
 
-What it does:
-	Just executes the IApplication pipeline.
+/**
+ * @file main.cpp
+ * @author Interfector99
+ * @brief Main entry point of the application.
+ *
+ * @section what_it_is What it is
+ * Just the main function call.
+ *
+ * @section what_it_does What it does
+ * Executes the IApplication pipeline.
+ *
+ * @section interactions Interactions
+ * Gets and processes application level messages.
+ *
+ * @section design Design
+ * No design pattern used, but Application class is exchangeable through the interface.
+ */
 
-Design:
-	No design pattern used, but Application class is exchange-able through the interface.
-*/
-
-/// TODO: abstract factory pattern for different Application hierarchies.
 int main()
 {
-	IApplication* p_Application = new Application();
+	std::shared_ptr<IApplication> p_Application(new Application());
 	p_Application->executePipeline();
+	p_Application.reset();
 	return 0;
 }

@@ -1,21 +1,24 @@
 #ifndef IAPPLICATION_HPP
 #define IAPPLICATION_HPP
 
-/*
-IApplication:
-What it is:
-	Purely abstract interface/contract for Application classes.
-	Pipeline: Creation -> Initialization -> Run -> Finish -> Destroy
-
-What it does:
-	Provides a State about the whole program.
-	Provides connection to IMEssageRouter interface.
-
-Design:
-	No design pattern used.
-*/
-
 #include "MessageRouter/IMessageRouter.hpp"
+
+#include <memory>
+
+/**
+ * @file IApplication.hpp
+ * @author Interfector99
+ * @brief Purely abstract interface/contract for Application classes.
+ *
+ * @section what_it_is What it is
+ * Purely abstract interface for the application lifecycle management.
+ *
+ * @section what_it_does What it does
+ * Provides a state about the whole program and a connection to IMessageRouter interface.
+ *
+ * @section design Design
+ * Implements a pipeline: Creation -> Initialization -> Run -> Finish -> Destroy.
+ */
 
 enum class STATE
 {
@@ -27,18 +30,16 @@ class IApplication
 {
 protected:
 	STATE m_State;
-	IMessageRouter* p_MessageRouter;
+	std::shared_ptr<IMessageRouter> p_MessageRouter;
 public:
 	virtual ~IApplication() = default;
-	void executePipeline()
-	{
-		init();
-		run();
-		finish();
-	}
+	// ---------------------------------------
+	virtual void executePipeline() = 0;
 	virtual void init() = 0;
 	virtual void run() = 0;
 	virtual void finish() = 0;
+	// ---------------------------------------
+	virtual void receiveMessage(std::string message) = 0;
 };
 
 #endif // IAPPLICATION_HPP

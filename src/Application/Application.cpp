@@ -5,25 +5,59 @@ Application::Application()
 	std::cout << "Application instance created" << std::endl;
 }
 
+Application::~Application()
+{
+	p_MessageRouter.reset();
+	std::cout << "Application instance destroyed" << std::endl;
+}
+// --------------------------------------------------------------------------------------------
+void Application::executePipeline()
+{
+	init();
+	run();
+	finish();
+}
+
 void Application::init()
 {
 	std::cout << "Application instance initialized" << std::endl;
-	p_MessageRouter = new MessageRouter();
+	p_MessageRouter = std::make_shared<MessageRouter>(this);
+	isRunning = false;
 }
 
 void Application::run()
 {
-	std::cout << "Application instance running" << std::endl;
+	std::cout << "Application instance started running" << std::endl;
+
+	std::srand(std::time(nullptr));
+
+	isRunning = true;
+	while (isRunning)
+	{
+		int randomNumber = std::rand() % 1001;
+
+		std::cout << "Generated number: " << randomNumber << std::endl;
+
+		if (randomNumber == 1000)
+		{
+			p_MessageRouter->sendMessage("END PROGRAM");
+		}
+	}
+
+	std::cout << "Application instance stopped running" << std::endl;
 }
 
 void Application::finish()
-{	
-	delete p_MessageRouter;
+{
+	p_MessageRouter.reset();
 	std::cout << "Application instance finished" << std::endl;
 }
-
-Application::~Application()
+// --------------------------------------------------------------------------------------------
+void Application::receiveMessage(std::string message)
 {
-	delete p_MessageRouter;
-	std::cout << "Application instance destroyed" << std::endl;
+	std::cout << "    Application received message: " << message << std::endl;
+	if (message == "END PROGRAM") 
+	{
+		isRunning = false;
+	}
 }
