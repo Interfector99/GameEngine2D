@@ -29,7 +29,7 @@ class App
 private:
 
 public:
-	App(const char* vs, const char* fs);
+	App();
 	void run();
 	void destroy();
 };

@@ -22,9 +22,6 @@
     <Filter Include="Header Files\Lib\imgui">
       <UniqueIdentifier>{7a0de13b-b118-4c33-91e1-1fd39d7b1461}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Core">
-      <UniqueIdentifier>{fe80c464-a626-4b90-835a-0634549e617d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Lib">
       <UniqueIdentifier>{50a59fde-6adc-4235-8a35-4ef64d8763e8}</UniqueIdentifier>
     </Filter>
@@ -34,14 +31,29 @@
     <Filter Include="Source Files\Lib\stb_image">
       <UniqueIdentifier>{05439a65-cd86-439d-9461-ad13c3722b01}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Core">
-      <UniqueIdentifier>{c1001641-1a54-4811-bb68-439a70c1f4fd}</UniqueIdentifier>
+    <Filter Include="Header Files\Src">
+      <UniqueIdentifier>{1eae37f2-57f8-4cb6-9c1f-5d6330f80f26}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\App">
-      <UniqueIdentifier>{87e162d6-a021-4711-bb3f-d664094d0309}</UniqueIdentifier>
+    <Filter Include="Source Files\Src">
+      <UniqueIdentifier>{82f02057-fb67-4d0f-a381-418f0c3d428c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\App">
-      <UniqueIdentifier>{7cfbf178-38f4-4656-bf51-bb65e0a4793e}</UniqueIdentifier>
+    <Filter Include="Header Files\Src\Application">
+      <UniqueIdentifier>{e9e4c3d2-c67e-4cde-b413-c390fb50606b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Src\MessageRouter">
+      <UniqueIdentifier>{bc1b9cc0-6f90-4631-8ef6-de8239d5517b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Src\Application">
+      <UniqueIdentifier>{e088d486-96a3-4da4-a461-e7a6d2bc5321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Src\MessageRouter">
+      <UniqueIdentifier>{9d42b538-b8f6-460f-b4bd-caf04a14eaa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Src\Managers">
+      <UniqueIdentifier>{f4552020-8db0-430c-a7c2-f4a952abdc0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Src\Managers">
+      <UniqueIdentifier>{39dff67f-4e05-4426-904f-f8e94aad3e98}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -70,13 +82,16 @@
       <Filter>Source Files\Lib\imgui</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Libraries\glad\glad.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Lib</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Application\Application.cpp">
+      <Filter>Source Files\Src\Application</Filter>
     </ClCompile>
-    <ClCompile Include="src\App\App.cpp">
-      <Filter>Source Files\App</Filter>
+    <ClCompile Include="src\Application\Main.cpp">
+      <Filter>Source Files\Src\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MessageRouter\MessageRouter.cpp">
+      <Filter>Source Files\Src\MessageRouter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -110,8 +125,17 @@
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_truetype.h">
       <Filter>Header Files\Lib\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="include\App\App.hpp">
-      <Filter>Header Files\App</Filter>
+    <ClInclude Include="include\Application\Application.hpp">
+      <Filter>Header Files\Src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Application\IApplication.hpp">
+      <Filter>Header Files\Src\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MessageRouter\IMessageRouter.hpp">
+      <Filter>Header Files\Src\MessageRouter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MessageRouter\MessageRouter.hpp">
+      <Filter>Header Files\Src\MessageRouter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

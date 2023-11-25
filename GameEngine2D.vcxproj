@@ -71,27 +71,27 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\GLFW\include;$(SolutionDir)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Interfector99\Libraries\GLFW\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
     <SourcePath>$(SolutionDir)\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\GLFW\include;$(SolutionDir)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Interfector99\Libraries\GLFW\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
     <IntDir>$(Configuration)</IntDir>
     <SourcePath>$(SolutionDir)\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\GLFW\include;$(SolutionDir)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Interfector99\Libraries\GLFW\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
     <SourcePath>$(SolutionDir)\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\GLFW\include;$(SolutionDir)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Interfector99\Libraries\GLFW\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
     <SourcePath>$(SolutionDir)\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
@@ -108,7 +108,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -128,7 +128,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -144,7 +144,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -164,7 +164,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -177,8 +177,9 @@
     <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_tables.cpp" />
     <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\App\App.cpp" />
+    <ClCompile Include="src\Application\Application.cpp" />
+    <ClCompile Include="src\Application\Main.cpp" />
+    <ClCompile Include="src\MessageRouter\MessageRouter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imconfig.h" />
@@ -191,7 +192,10 @@
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_textedit.h" />
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_truetype.h" />
     <ClInclude Include="..\..\..\Libraries\stb_image\stb_image.h" />
-    <ClInclude Include="include\App\App.hpp" />
+    <ClInclude Include="include\Application\Application.hpp" />
+    <ClInclude Include="include\Application\IApplication.hpp" />
+    <ClInclude Include="include\MessageRouter\IMessageRouter.hpp" />
+    <ClInclude Include="include\MessageRouter\MessageRouter.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
