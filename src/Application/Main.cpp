@@ -1,5 +1,12 @@
+// Parent classess
+
+// Interface classes
+#include "Application/IApplication.hpp"
+
+// Child classess
 #include "Application/Application.hpp"
 
+// C++ modules
 #include <memory>
 
 /**

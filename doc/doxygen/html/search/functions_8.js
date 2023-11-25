@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['_7eapplication_0',['~Application',['../class_application.html#a444b0b6d9162b14d5262b81bd75586df',1,'Application']]],
-  ['_7eiapplication_1',['~IApplication',['../class_i_application.html#a81859b4bfb89d53ba851789c806af299',1,'IApplication']]],
-  ['_7eimessagerouter_2',['~IMessageRouter',['../class_i_message_router.html#ad34991464e30105873706ddf2c806be7',1,'IMessageRouter']]],
-  ['_7emessagerouter_3',['~MessageRouter',['../class_message_router.html#abb15d083974fd214a0551ba034f76fd8',1,'MessageRouter']]]
+  ['sendmessage_0',['sendmessage',['../class_graphics_manager.html#ac4e0d83d43f11a480d0c5494ef23361c',1,'GraphicsManager::sendMessage()'],['../class_i_manager.html#adece8b70bbb20fcaa82ca7cea44e84ef',1,'IManager::sendMessage()'],['../class_i_message_router.html#adf534d3d9b96609d8aba1d58a68fb306',1,'IMessageRouter::sendMessage()'],['../class_message_router.html#a1d58f5a3b7312c3f0b2ec7a24051db10',1,'MessageRouter::sendMessage()']]]
 ];

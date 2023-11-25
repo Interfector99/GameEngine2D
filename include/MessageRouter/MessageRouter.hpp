@@ -1,9 +1,16 @@
 #ifndef MESSAGEROUTER_HPP
 #define MESSAGEROUTER_HPP
 
-#include "IMessageRouter.hpp"
-#include "Application/IApplication.hpp"
+// Parent classess
+#include "Application/Application.hpp"
 
+// Interface classess
+#include "IMessageRouter.hpp"
+
+// Child classess
+#include "Managers/GraphicsManager/GraphicsManager.hpp"
+
+// C++ modules
 #include <iostream>
 
 /**
@@ -24,12 +31,12 @@
 class MessageRouter : public IMessageRouter
 {
 private:
-	IApplication* p_Application; // Non-owning pointer to parent Application
 public:
 	MessageRouter(IApplication* p_Application);
 	~MessageRouter() override;
 	// ---------------------------------------
 	void sendMessage(std::string message) override;
+	void receiveMessage(std::string message) override;
 };
 
 #endif // MESSAGEROUTER_HPP

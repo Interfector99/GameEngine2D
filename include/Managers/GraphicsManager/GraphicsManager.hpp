@@ -1,37 +1,29 @@
-#ifndef APP_HPP
-#define APP_HPP
+#ifndef GRAPHICSMANAGER_HPP
+#define GRAPHICSMANAGER_HPP
 
-#include"imgui/imgui.h"
-#include"imgui/imgui_impl_glfw.h"
-#include"imgui/imgui_impl_opengl3.h"
+// Parent classess
+#include "MessageRouter/MessageRouter.hpp"
 
-#include<iostream>
-#include<glad/glad.h>
-#include<GLFW/glfw3.h>
+// Interface classess
+#include "Managers/IManager.hpp"
 
-#include <assimp/Importer.hpp>
+// Child classess
 
-#include<glm/vec2.hpp>
+// C++ modules
 
-#include<box2d/box2d.h>
 
-#include<entt/entt.hpp>
 
-extern "C"
-{
-#include "lua/lua.h"
-#include "lua/lauxlib.h"
-#include "lua/lualib.h"
-}
 
-class App
+class GraphicsManager : public IManager
 {
 private:
-
+	
 public:
-	App();
-	void run();
-	void destroy();
+	GraphicsManager(IMessageRouter* p_MessageRouter);
+	~GraphicsManager() override;
+	// ---------------------------------------
+	void sendMessage(std::string message) override;
+	void receiveMessage(std::string message) override;
 };
 
-#endif // APP_HPP
+#endif // GRAPHICSMANAGER_HPP

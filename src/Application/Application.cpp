@@ -2,6 +2,7 @@
 
 Application::Application()
 {
+	isRunning = false;
 	std::cout << "Application instance created" << std::endl;
 }
 
@@ -20,9 +21,8 @@ void Application::executePipeline()
 
 void Application::init()
 {
-	std::cout << "Application instance initialized" << std::endl;
 	p_MessageRouter = std::make_shared<MessageRouter>(this);
-	isRunning = false;
+	std::cout << "Application instance initialized" << std::endl;
 }
 
 void Application::run()

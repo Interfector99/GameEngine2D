@@ -1,15 +1,8 @@
 #ifndef APPLICATION_HPP
 #define APPLICATION_HPP
 
-// Parent classess
-
-// Interface classess
 #include "IApplication.hpp"
-
-// Child classess
 #include "MessageRouter/MessageRouter.hpp"
-
-// C++ modules
 
 #include <iostream>
 #include <memory>

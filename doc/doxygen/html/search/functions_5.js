@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Main.cpp']]],
-  ['messagerouter_1',['MessageRouter',['../class_message_router.html#a8f8967907958fbb895f8c49f898976b8',1,'MessageRouter']]]
+  ['init_0',['init',['../class_application.html#ad37aac81d60956523ef5b441f49e9078',1,'Application::init()'],['../class_i_application.html#abf6bfd3c21e3ce6cfb7603cbb7aeda90',1,'IApplication::init()'],['../class_application.html#ad37aac81d60956523ef5b441f49e9078',1,'Application::init()']]]
 ];

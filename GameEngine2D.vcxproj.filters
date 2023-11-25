@@ -55,6 +55,12 @@
     <Filter Include="Source Files\Src\Managers">
       <UniqueIdentifier>{39dff67f-4e05-4426-904f-f8e94aad3e98}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Src\Managers\GraphicsManager">
+      <UniqueIdentifier>{108eb4b2-55ba-4285-949e-0e519dd985f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Src\Managers\GraphicsManager">
+      <UniqueIdentifier>{597df0ff-8abe-451a-898a-9feb48261090}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp">
@@ -92,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="src\MessageRouter\MessageRouter.cpp">
       <Filter>Source Files\Src\MessageRouter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Managers\GraphicsManager\GraphicsManager.cpp">
+      <Filter>Source Files\Src\Managers\GraphicsManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +145,15 @@
     </ClInclude>
     <ClInclude Include="include\MessageRouter\MessageRouter.hpp">
       <Filter>Header Files\Src\MessageRouter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Managers\IManager.hpp">
+      <Filter>Header Files\Src\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Managers\Manager.hpp">
+      <Filter>Header Files\Src\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Managers\GraphicsManager\GraphicsManager.hpp">
+      <Filter>Header Files\Src\Managers\GraphicsManager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

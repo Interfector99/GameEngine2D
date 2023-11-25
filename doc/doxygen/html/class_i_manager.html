@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GameEngine2D: IMessageRouter Class Reference</title>
+<title>GameEngine2D: IManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,40 +72,34 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="class_i_message_router-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">IMessageRouter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+<a href="class_i_manager-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">IManager Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_i_message_router_8hpp_source.html">IMessageRouter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_i_manager_8hpp_source.html">IManager.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for IMessageRouter:</div>
+Inheritance diagram for IManager:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_i_message_router.png" usemap="#IMessageRouter_map" alt=""/>
-  <map id="IMessageRouter_map" name="IMessageRouter_map">
-<area href="class_message_router.html" alt="MessageRouter" shape="rect" coords="0,56,103,80"/>
+  <img src="class_i_manager.png" usemap="#IManager_map" alt=""/>
+  <map id="IManager_map" name="IManager_map">
+<area href="class_graphics_manager.html" alt="GraphicsManager" shape="rect" coords="0,56,114,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad34991464e30105873706ddf2c806be7" id="r_ad34991464e30105873706ddf2c806be7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_message_router.html#ad34991464e30105873706ddf2c806be7">~IMessageRouter</a> ()=default</td></tr>
-<tr class="separator:ad34991464e30105873706ddf2c806be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf534d3d9b96609d8aba1d58a68fb306" id="r_adf534d3d9b96609d8aba1d58a68fb306"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_message_router.html#adf534d3d9b96609d8aba1d58a68fb306">sendMessage</a> (std::string message)=0</td></tr>
-<tr class="separator:adf534d3d9b96609d8aba1d58a68fb306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7845e4fe069c92a770414fd5429b3f9" id="r_aa7845e4fe069c92a770414fd5429b3f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_message_router.html#aa7845e4fe069c92a770414fd5429b3f9">receiveMessage</a> (std::string message)=0</td></tr>
-<tr class="separator:aa7845e4fe069c92a770414fd5429b3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a160c0501a546301d7f262a2bc6547f3e" id="r_a160c0501a546301d7f262a2bc6547f3e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_i_manager.html">IManager</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_message_router.html#a160c0501a546301d7f262a2bc6547f3e">v_Managers</a></td></tr>
-<tr class="separator:a160c0501a546301d7f262a2bc6547f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202714648a0d1845f9bc12c684f63031" id="r_a202714648a0d1845f9bc12c684f63031"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#a202714648a0d1845f9bc12c684f63031">~IManager</a> ()=default</td></tr>
+<tr class="separator:a202714648a0d1845f9bc12c684f63031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adece8b70bbb20fcaa82ca7cea44e84ef" id="r_adece8b70bbb20fcaa82ca7cea44e84ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#adece8b70bbb20fcaa82ca7cea44e84ef">sendMessage</a> (std::string message)=0</td></tr>
+<tr class="separator:adece8b70bbb20fcaa82ca7cea44e84ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6576c92a59efab57b63c6433f46950d0" id="r_a6576c92a59efab57b63c6433f46950d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_manager.html#a6576c92a59efab57b63c6433f46950d0">receiveMessage</a> (std::string message)=0</td></tr>
+<tr class="separator:a6576c92a59efab57b63c6433f46950d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad34991464e30105873706ddf2c806be7" name="ad34991464e30105873706ddf2c806be7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad34991464e30105873706ddf2c806be7">&#9670;&#160;</a></span>~IMessageRouter()</h2>
+<a id="a202714648a0d1845f9bc12c684f63031" name="a202714648a0d1845f9bc12c684f63031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a202714648a0d1845f9bc12c684f63031">&#9670;&#160;</a></span>~IManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,7 +108,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual IMessageRouter::~IMessageRouter </td>
+          <td class="memname">virtual IManager::~IManager </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -130,8 +124,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa7845e4fe069c92a770414fd5429b3f9" name="aa7845e4fe069c92a770414fd5429b3f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7845e4fe069c92a770414fd5429b3f9">&#9670;&#160;</a></span>receiveMessage()</h2>
+<a id="a6576c92a59efab57b63c6433f46950d0" name="a6576c92a59efab57b63c6433f46950d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6576c92a59efab57b63c6433f46950d0">&#9670;&#160;</a></span>receiveMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +134,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void IMessageRouter::receiveMessage </td>
+          <td class="memname">virtual void IManager::receiveMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
@@ -154,12 +148,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_message_router.html#a3e3d0a1e6b12dd7d531bbf12739d5962">MessageRouter</a>.</p>
+<p>Implemented in <a class="el" href="class_graphics_manager.html#af17d1351b5ec38a8fc01298c1b7ed753">GraphicsManager</a>.</p>
 
 </div>
 </div>
-<a id="adf534d3d9b96609d8aba1d58a68fb306" name="adf534d3d9b96609d8aba1d58a68fb306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf534d3d9b96609d8aba1d58a68fb306">&#9670;&#160;</a></span>sendMessage()</h2>
+<a id="adece8b70bbb20fcaa82ca7cea44e84ef" name="adece8b70bbb20fcaa82ca7cea44e84ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adece8b70bbb20fcaa82ca7cea44e84ef">&#9670;&#160;</a></span>sendMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +162,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void IMessageRouter::sendMessage </td>
+          <td class="memname">virtual void IManager::sendMessage </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
@@ -182,35 +176,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_message_router.html#a1d58f5a3b7312c3f0b2ec7a24051db10">MessageRouter</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a160c0501a546301d7f262a2bc6547f3e" name="a160c0501a546301d7f262a2bc6547f3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a160c0501a546301d7f262a2bc6547f3e">&#9670;&#160;</a></span>v_Managers</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_i_manager.html">IManager</a>&gt; &gt; IMessageRouter::v_Managers</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Implemented in <a class="el" href="class_graphics_manager.html#ac4e0d83d43f11a480d0c5494ef23361c">GraphicsManager</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/MessageRouter/<a class="el" href="_i_message_router_8hpp_source.html">IMessageRouter.hpp</a></li>
+<li>include/Managers/<a class="el" href="_i_manager_8hpp_source.html">IManager.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,7 +1,17 @@
 #ifndef IMESSAGEROUTER_HPP
 #define IMESSAGEROUTER_HPP
 
+// Parent classess
+#include "Application/IApplication.hpp"
+
+// Interface classess
+
+// Child classess
+#include "Managers/IManager.hpp"
+
+// C++ modules
 #include <iostream>
+#include <memory>
 #include <vector>
 
 /**
@@ -22,11 +32,13 @@
 class IMessageRouter
 {
 protected:
-	//std::vector<IManager*> v_Managers;
+	IApplication* p_Application; // Non-owning pointer to parent Application
+	std::vector<std::shared_ptr<IManager>> v_Managers;
 public:
 	virtual ~IMessageRouter() = default;
 	// ---------------------------------------
 	virtual void sendMessage(std::string message) = 0;
+	virtual void receiveMessage(std::string message) = 0;
 };
 
 #endif // IMESSAGEROUTER_HPP
