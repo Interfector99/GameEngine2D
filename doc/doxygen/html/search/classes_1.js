@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graphicsmanager_0',['GraphicsManager',['../class_graphics_manager.html',1,'']]]
+  ['displaymodule_0',['DisplayModule',['../class_display_module.html',1,'']]]
 ];

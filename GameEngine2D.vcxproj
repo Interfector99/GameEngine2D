@@ -101,14 +101,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include;C:\Interfector99\Libraries\OIS\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;C:\Interfector99\Libraries\OIS\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
@@ -123,7 +123,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include;C:\Interfector99\Libraries\OIS\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,7 +131,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;C:\Interfector99\Libraries\OIS\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
@@ -144,13 +144,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include;C:\Interfector99\Libraries\OIS\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;C:\Interfector99\Libraries\OIS\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
@@ -164,7 +164,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Interfector99\Libraries\GLFW\include;C:\Interfector99\Libraries\glad\include;C:\Interfector99\Libraries\glm\include;C:\Interfector99\Libraries\lua\include;C:\Interfector99\Libraries\entt\include;C:\Interfector99\Libraries\box2d\include;C:\Interfector99\Libraries\imgui\include;C:\Interfector99\Libraries\assimp\include;C:\Interfector99\Libraries\OIS\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -173,7 +173,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Interfector99\Libraries\GLFW\lib;C:\Interfector99\Libraries\lua\lib;C:\Interfector99\Libraries\box2d\lib;C:\Interfector99\Libraries\assimp\lib;C:\Interfector99\Libraries\OIS\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>"C:\Program Files\doxygen\bin\doxygen.exe" "$(ProjectDir)\doc\doxygen\Doxyfile"</Command>
@@ -191,11 +191,8 @@
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp" />
     <ClCompile Include="src\Application\Application.cpp" />
     <ClCompile Include="src\Application\Main.cpp" />
-    <ClCompile Include="src\Managers\GraphicsManager\GraphicsManager.cpp" />
-    <ClCompile Include="src\Managers\InputManager\Event\KeyboardEvent.cpp" />
-    <ClCompile Include="src\Managers\InputManager\Event\MouseEvent.cpp" />
-    <ClCompile Include="src\Managers\InputManager\InputManager.cpp" />
-    <ClCompile Include="src\MessageRouter\MessageRouter.cpp" />
+    <ClCompile Include="src\Modules\DisplayModule\DisplayModule.cpp" />
+    <ClCompile Include="src\Modules\InputModule\InputModule.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imconfig.h" />
@@ -210,14 +207,9 @@
     <ClInclude Include="..\..\..\Libraries\stb_image\stb_image.h" />
     <ClInclude Include="include\Application\Application.hpp" />
     <ClInclude Include="include\Application\IApplication.hpp" />
-    <ClInclude Include="include\Managers\GraphicsManager\GraphicsManager.hpp" />
-    <ClInclude Include="include\Managers\IManager.hpp" />
-    <ClInclude Include="include\Managers\InputManager\Event\IEvent.hpp" />
-    <ClInclude Include="include\Managers\InputManager\Event\KeyboardEvent.hpp" />
-    <ClInclude Include="include\Managers\InputManager\Event\MouseEvent.hpp" />
-    <ClInclude Include="include\Managers\InputManager\InputManager.hpp" />
-    <ClInclude Include="include\MessageRouter\IMessageRouter.hpp" />
-    <ClInclude Include="include\MessageRouter\MessageRouter.hpp" />
+    <ClInclude Include="include\Modules\DisplayModule\DisplayModule.hpp" />
+    <ClInclude Include="include\Modules\IModule.hpp" />
+    <ClInclude Include="include\Modules\InputModule\InputModule.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

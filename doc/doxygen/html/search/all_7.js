@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['keyboardevent_0',['KeyboardEvent',['../class_keyboard_event.html',1,'']]],
-  ['keyboardevent_2ecpp_1',['KeyboardEvent.cpp',['../_keyboard_event_8cpp.html',1,'']]],
-  ['keyboardevent_2ehpp_2',['KeyboardEvent.hpp',['../_keyboard_event_8hpp.html',1,'']]]
+  ['run_0',['run',['../class_application.html#a6815195c956c091a6558a316f8fd9976',1,'Application::run()'],['../class_i_application.html#a89be99fa4c296edc38dd8b4bc015c377',1,'IApplication::run()']]]
 ];

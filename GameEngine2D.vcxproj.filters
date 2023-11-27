@@ -40,38 +40,26 @@
     <Filter Include="Header Files\Src\Application">
       <UniqueIdentifier>{e9e4c3d2-c67e-4cde-b413-c390fb50606b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Src\MessageRouter">
-      <UniqueIdentifier>{bc1b9cc0-6f90-4631-8ef6-de8239d5517b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Src\Application">
       <UniqueIdentifier>{e088d486-96a3-4da4-a461-e7a6d2bc5321}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Src\MessageRouter">
-      <UniqueIdentifier>{9d42b538-b8f6-460f-b4bd-caf04a14eaa6}</UniqueIdentifier>
+    <Filter Include="Source Files\Src\Modules">
+      <UniqueIdentifier>{22569b45-bb05-4fcf-8872-f89a126c52b3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Src\Managers">
-      <UniqueIdentifier>{f4552020-8db0-430c-a7c2-f4a952abdc0b}</UniqueIdentifier>
+    <Filter Include="Source Files\Src\Modules\InputModule">
+      <UniqueIdentifier>{67c465f4-335f-4552-adcd-1eb6b736fff0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Src\Managers">
-      <UniqueIdentifier>{39dff67f-4e05-4426-904f-f8e94aad3e98}</UniqueIdentifier>
+    <Filter Include="Header Files\Src\Modules">
+      <UniqueIdentifier>{ee186d0f-2604-4234-9af3-3e4214dc9547}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Src\Managers\GraphicsManager">
-      <UniqueIdentifier>{108eb4b2-55ba-4285-949e-0e519dd985f4}</UniqueIdentifier>
+    <Filter Include="Header Files\Src\Modules\InputModule">
+      <UniqueIdentifier>{d98df7c0-e422-45d6-a164-a10361c943a3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Src\Managers\GraphicsManager">
-      <UniqueIdentifier>{597df0ff-8abe-451a-898a-9feb48261090}</UniqueIdentifier>
+    <Filter Include="Source Files\Src\Modules\DisplayModule">
+      <UniqueIdentifier>{45ce3452-add6-4cf6-9199-bcfcd72ce597}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Src\Managers\InputManager">
-      <UniqueIdentifier>{292ac071-a874-4152-aa6f-f448ae51ee4b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Src\Managers\InputManager">
-      <UniqueIdentifier>{32e9af9e-a43f-43a0-9734-069097b7e693}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Src\Managers\InputManager\Event">
-      <UniqueIdentifier>{6fff80c4-ad93-4f30-a2c9-9333b26c3ead}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Src\Managers\InputManager\Event">
-      <UniqueIdentifier>{ed18d754-c6ac-4d23-824e-0c91774e4c92}</UniqueIdentifier>
+    <Filter Include="Header Files\Src\Modules\DisplayModule">
+      <UniqueIdentifier>{b3d9a173-cf62-4f81-b7ad-275ffa506b2e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -108,20 +96,11 @@
     <ClCompile Include="src\Application\Main.cpp">
       <Filter>Source Files\Src\Application</Filter>
     </ClCompile>
-    <ClCompile Include="src\MessageRouter\MessageRouter.cpp">
-      <Filter>Source Files\Src\MessageRouter</Filter>
+    <ClCompile Include="src\Modules\InputModule\InputModule.cpp">
+      <Filter>Source Files\Src\Modules\InputModule</Filter>
     </ClCompile>
-    <ClCompile Include="src\Managers\GraphicsManager\GraphicsManager.cpp">
-      <Filter>Source Files\Src\Managers\GraphicsManager</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Managers\InputManager\InputManager.cpp">
-      <Filter>Source Files\Src\Managers\InputManager</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Managers\InputManager\Event\KeyboardEvent.cpp">
-      <Filter>Source Files\Src\Managers\InputManager\Event</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Managers\InputManager\Event\MouseEvent.cpp">
-      <Filter>Source Files\Src\Managers\InputManager\Event</Filter>
+    <ClCompile Include="src\Modules\DisplayModule\DisplayModule.cpp">
+      <Filter>Source Files\Src\Modules\DisplayModule</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -161,29 +140,14 @@
     <ClInclude Include="include\Application\IApplication.hpp">
       <Filter>Header Files\Src\Application</Filter>
     </ClInclude>
-    <ClInclude Include="include\MessageRouter\IMessageRouter.hpp">
-      <Filter>Header Files\Src\MessageRouter</Filter>
+    <ClInclude Include="include\Modules\InputModule\InputModule.hpp">
+      <Filter>Header Files\Src\Modules\InputModule</Filter>
     </ClInclude>
-    <ClInclude Include="include\MessageRouter\MessageRouter.hpp">
-      <Filter>Header Files\Src\MessageRouter</Filter>
+    <ClInclude Include="include\Modules\IModule.hpp">
+      <Filter>Header Files\Src\Modules</Filter>
     </ClInclude>
-    <ClInclude Include="include\Managers\IManager.hpp">
-      <Filter>Header Files\Src\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Managers\GraphicsManager\GraphicsManager.hpp">
-      <Filter>Header Files\Src\Managers\GraphicsManager</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Managers\InputManager\InputManager.hpp">
-      <Filter>Header Files\Src\Managers\InputManager</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Managers\InputManager\Event\IEvent.hpp">
-      <Filter>Header Files\Src\Managers\InputManager\Event</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Managers\InputManager\Event\KeyboardEvent.hpp">
-      <Filter>Header Files\Src\Managers\InputManager\Event</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Managers\InputManager\Event\MouseEvent.hpp">
-      <Filter>Header Files\Src\Managers\InputManager\Event</Filter>
+    <ClInclude Include="include\Modules\DisplayModule\DisplayModule.hpp">
+      <Filter>Header Files\Src\Modules\DisplayModule</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

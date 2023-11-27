@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['configloader_2ecpp_0',['ConfigLoader.cpp',['../_config_loader_8cpp.html',1,'']]],
-  ['configloader_2ehpp_1',['ConfigLoader.hpp',['../_config_loader_8hpp.html',1,'']]]
+  ['displaymodule_2ecpp_0',['DisplayModule.cpp',['../_display_module_8cpp.html',1,'']]],
+  ['displaymodule_2ehpp_1',['DisplayModule.hpp',['../_display_module_8hpp.html',1,'']]]
 ];

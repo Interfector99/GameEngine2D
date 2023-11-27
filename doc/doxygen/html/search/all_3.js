@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['ecsmanager_2ecpp_0',['EcsManager.cpp',['../_ecs_manager_8cpp.html',1,'']]],
-  ['ecsmanager_2ehpp_1',['EcsManager.hpp',['../_ecs_manager_8hpp.html',1,'']]],
-  ['executepipeline_2',['executepipeline',['../class_application.html#a1dfd469b8e3eb2abfde3551fc30a945d',1,'Application::executePipeline()'],['../class_i_application.html#afbd2000efd0265a55003bfd04c52047f',1,'IApplication::executePipeline()']]]
+  ['finish_0',['finish',['../class_application.html#a7de98356997e9c343788c3c19a8900a5',1,'Application::finish()'],['../class_i_application.html#a7f57eca580b7e02959801f0ced020eb4',1,'IApplication::finish()'],['../class_display_module.html#aaec441080f55a5cfa787e70b014ea657',1,'DisplayModule::finish()'],['../class_i_module.html#a74e8bf66691a981b5d99c1d77308e666',1,'IModule::finish()'],['../class_input_module.html#ac20b87d2aaaa6f67dc876332140b4a7b',1,'InputModule::finish()']]]
 ];

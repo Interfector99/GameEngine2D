@@ -1,83 +1,69 @@
 #include "Application/Application.hpp"
 
+//////////////////////////////
+// Constructors/Destructors //
+//////////////////////////////
 Application::Application()
 {
 	std::cout << "Application instance created" << std::endl;
-	m_State = STATE::ON;
-	isRunning = false;
+	e_State = STATE::ON;
 }
 
 Application::~Application()
 {
 	std::cout << "Application instance destroyed" << std::endl;
-	m_State = STATE::OFF;
-	isRunning = false;
-	p_MessageRouter.reset();
+	e_State = STATE::OFF;
 }
-// --------------------------------------------------------------------------------------------
+
+//////////////////////////////
+//          Pipeline		//
+//////////////////////////////
 void Application::executePipeline()
 {
-	init();
+	initialize();
 	run();
 	finish();
 }
 
-void Application::init()
+void Application::initialize()
 {
 	std::cout << "Application instance initialized" << std::endl;
-	p_MessageRouter = std::make_shared<MessageRouter>(this);
+	m_DisplayModule.initialize();
+	m_InputModule.initialize();
+	m_DisplayModule.setHandleInputCallback([this](int key, int action)
+	{
+		handleInput(key, action);
+	});
 }
 
 void Application::run()
 {
 	std::cout << "Application instance started running" << std::endl;
+	e_State = STATE::RUNNING;
 
-	std::srand(std::time(nullptr));
-
-	m_State = STATE::RUNNING;
-	isRunning = true;
-
-	while (isRunning)
+	while (e_State == STATE::RUNNING)
 	{
-		int randomNumber = std::rand() % 1001;
-
-		std::cout << randomNumber << std::endl;
-
-		if (randomNumber == 1000)
-		{
-			isRunning = false;
-		}
+		glfwPollEvents();
 	}
-	m_State = STATE::ON;
+
 	std::cout << "Application instance stopped running" << std::endl;
 }
 
 void Application::finish()
 {
 	std::cout << "Application instance finished" << std::endl;
-	m_State = STATE::OFF;
-	isRunning = false;
-	p_MessageRouter.reset();
-}
-// --------------------------------------------------------------------------------------------
-void Application::sendMessage(std::string receiver, std::string message)
-{
-	std::cout << "  Application sent message to " << receiver << ": " << message << std::endl;
-	if (receiver == "MessageRouter")
-	{
-		p_MessageRouter->receiveMessage("Application", message);
-	}
+	e_State = STATE::OFF;
+	m_InputModule.finish();
 }
 
-void Application::receiveMessage(std::string sender, std::string message)
+//////////////////////////////
+//      Module callbacks	//
+//////////////////////////////
+void Application::handleInput(int key, int action)
 {
-	std::cout << "  Application received message from " << sender << ": " << message << std::endl;
-	
-	if (sender == "MessageRouter")
+	std::cout << "Application received input: Key = " << key << ", Action = " << action << std::endl;
+	if (key == GLFW_KEY_Q && action == GLFW_PRESS)
 	{
-		if (message == "END PROGRAM")
-		{
-			isRunning = false;
-		}
+		e_State = STATE::OFF;
 	}
 }
