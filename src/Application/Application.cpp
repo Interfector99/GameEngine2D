@@ -43,7 +43,7 @@ void Application::run()
 
 	while (e_State == STATE::RUNNING)
 	{
-		glfwPollEvents();
+		m_DisplayModule.update();
 	}
 
 	std::cout << "Application instance stopped running" << std::endl;

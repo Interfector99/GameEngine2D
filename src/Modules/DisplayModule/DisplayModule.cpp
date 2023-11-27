@@ -53,8 +53,25 @@ void DisplayModule::setHandleInputCallback(const std::function<void(int, int)>& 
 
 void DisplayModule::handleInput(int key, int action)
 {
+	std::cout << "Application received input: Key = " << key << ", Action = " << action << std::endl;
 	if (key == GLFW_KEY_Q && action == GLFW_PRESS)
 	{
 		if (onInput) onInput(key, action);
 	}
+}
+
+void DisplayModule::update()
+{
+	// Wait some time until the reach the target frame time in milliseconds
+	int time_to_wait = FRAME_TARGET_TIME - (glfwGetTime()  - previousFrameTime);
+
+	// Only delay execution if we are running too fast
+	// (Gives up resources to other processes)
+	if (time_to_wait > 0 && time_to_wait <= FRAME_TARGET_TIME) {
+		std::this_thread::sleep_for(std::chrono::milliseconds(time_to_wait));
+	}
+
+	previousFrameTime = glfwGetTime();
+	glfwPollEvents();
+	// glfwSwapBuffers(p_Window);
 }
