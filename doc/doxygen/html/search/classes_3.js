@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keyboardevent_0',['KeyboardEvent',['../class_keyboard_event.html',1,'']]]
+  ['inputmodule_0',['InputModule',['../class_input_module.html',1,'']]]
 ];

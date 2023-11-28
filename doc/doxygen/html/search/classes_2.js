@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inputmodule_0',['InputModule',['../class_input_module.html',1,'']]]
+  ['graphicsmodule_0',['GraphicsModule',['../class_graphics_module.html',1,'']]]
 ];

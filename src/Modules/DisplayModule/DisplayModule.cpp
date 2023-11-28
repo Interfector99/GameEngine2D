@@ -34,7 +34,7 @@ void DisplayModule::initialize()
 
 void DisplayModule::finish()
 {
-	delete p_Window;
+	glfwSetWindowShouldClose(p_Window, true);
 	glfwTerminate();
 	std::cout << "	DisplayModule instance finished" << std::endl;
 }

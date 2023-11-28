@@ -2,8 +2,9 @@
 #define APPLICATION_HPP
 
 // Modules
-#include "Modules/InputModule/InputModule.hpp"
 #include "Modules/DisplayModule/DisplayModule.hpp"
+#include "Modules/InputModule/InputModule.hpp"
+#include "Modules/GraphicsModule/GraphicsModule.hpp"
 
 #include <iostream>
 
@@ -19,6 +20,7 @@ private:
 	STATE e_State;
 	InputModule m_InputModule;
 	DisplayModule m_DisplayModule;
+	GraphicsModule m_GraphicsModule;
 public:
 	//////////////////////////////
 	// Constructors/Destructors //
