@@ -137,14 +137,8 @@
     <ClInclude Include="include\Application\Application.hpp">
       <Filter>Header Files\Src\Application</Filter>
     </ClInclude>
-    <ClInclude Include="include\Application\IApplication.hpp">
-      <Filter>Header Files\Src\Application</Filter>
-    </ClInclude>
     <ClInclude Include="include\Modules\InputModule\InputModule.hpp">
       <Filter>Header Files\Src\Modules\InputModule</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Modules\IModule.hpp">
-      <Filter>Header Files\Src\Modules</Filter>
     </ClInclude>
     <ClInclude Include="include\Modules\DisplayModule\DisplayModule.hpp">
       <Filter>Header Files\Src\Modules\DisplayModule</Filter>

@@ -14,7 +14,7 @@ DisplayModule::~DisplayModule()
 }
 
 //////////////////////////////
-//          Pipeline		//
+//         Life cycle		//
 //////////////////////////////
 void DisplayModule::initialize()
 {
@@ -30,40 +30,24 @@ void DisplayModule::initialize()
 		glfwTerminate();
 	}
 	glfwMakeContextCurrent(p_Window);
-
-	glfwSetKeyCallback(p_Window, [](GLFWwindow* window, int key, int scancode, int action, int mods)
-	{
-		DisplayModule* module = static_cast<DisplayModule*>(glfwGetWindowUserPointer(window));
-		if (module) module->handleInput(key, action);
-	});
-
-	glfwSetWindowUserPointer(p_Window, this);
 }
 
 void DisplayModule::finish()
 {
+	delete p_Window;
 	glfwTerminate();
 	std::cout << "	DisplayModule instance finished" << std::endl;
 }
 
-void DisplayModule::setHandleInputCallback(const std::function<void(int, int)>& callback)
+GLFWwindow* DisplayModule::getWindow()
 {
-	onInput = callback;
+	return p_Window;
 }
 
-void DisplayModule::handleInput(int key, int action)
-{
-	std::cout << "Application received input: Key = " << key << ", Action = " << action << std::endl;
-	if (key == GLFW_KEY_Q && action == GLFW_PRESS)
-	{
-		if (onInput) onInput(key, action);
-	}
-}
-
-void DisplayModule::update()
+void DisplayModule::updateDisplay()
 {
 	// Wait some time until the reach the target frame time in milliseconds
-	int time_to_wait = FRAME_TARGET_TIME - (glfwGetTime()  - previousFrameTime);
+	int time_to_wait = FRAME_TARGET_TIME - (glfwGetTime()  - m_PreviousFrameTime);
 
 	// Only delay execution if we are running too fast
 	// (Gives up resources to other processes)
@@ -71,7 +55,5 @@ void DisplayModule::update()
 		std::this_thread::sleep_for(std::chrono::milliseconds(time_to_wait));
 	}
 
-	previousFrameTime = glfwGetTime();
-	glfwPollEvents();
-	// glfwSwapBuffers(p_Window);
+	m_PreviousFrameTime = glfwGetTime();
 }

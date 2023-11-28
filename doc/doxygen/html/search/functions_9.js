@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_0',['update',['../class_display_module.html#a9e0cacb15f8e552622747bad855502cd',1,'DisplayModule']]]
+  ['run_0',['run',['../class_application.html#a68965449404743bf1add056784d6cf81',1,'Application']]]
 ];

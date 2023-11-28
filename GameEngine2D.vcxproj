@@ -206,9 +206,7 @@
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_truetype.h" />
     <ClInclude Include="..\..\..\Libraries\stb_image\stb_image.h" />
     <ClInclude Include="include\Application\Application.hpp" />
-    <ClInclude Include="include\Application\IApplication.hpp" />
     <ClInclude Include="include\Modules\DisplayModule\DisplayModule.hpp" />
-    <ClInclude Include="include\Modules\IModule.hpp" />
     <ClInclude Include="include\Modules\InputModule\InputModule.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

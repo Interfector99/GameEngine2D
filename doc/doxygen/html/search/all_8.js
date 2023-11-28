@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sethandleinputcallback_0',['setHandleInputCallback',['../class_display_module.html#ad7ad2b5d89a9f9b08a151035ec994487',1,'DisplayModule']]]
+  ['pollevents_0',['pollEvents',['../class_input_module.html#ac257025e83f7aabd9a09758d720b9d6f',1,'InputModule']]]
 ];

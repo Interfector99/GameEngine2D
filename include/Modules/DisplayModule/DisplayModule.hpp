@@ -2,41 +2,37 @@
 #define DISPLAYMODULE_HPP
 
 #define FPS 30
-#define FRAME_TARGET_TIME (1000 / FPS)
-
-#include "Modules/IModule.hpp"
+#define FRAME_TARGET_TIME (1 / FPS)
 
 #include <GLFW/glfw3.h>
 
 #include <iostream>
 #include <vector>
-#include <functional>
 #include <chrono>
 #include <thread>
 
-class DisplayModule : public IModule
+class DisplayModule
 {
 private:
 	GLFWwindow* p_Window;
-
-	std::function<void(int, int)> onInput;
-
-	int previousFrameTime = 0;
+	int m_PreviousFrameTime = 0;
 public:
 	//////////////////////////////
 	// Constructors/Destructors //
 	//////////////////////////////
 	DisplayModule();
-	~DisplayModule() override;
+	~DisplayModule();
 
 	//////////////////////////////
-	//          Pipeline		//
+	//      Setters/Getters		//
 	//////////////////////////////
-	void initialize() override;
-	void finish() override;
+	GLFWwindow* getWindow();
 
-	void setHandleInputCallback(const std::function<void(int, int)>& callback);
-	void handleInput(int key, int action);
-	void update();
+	//////////////////////////////
+	//         Life cycle		//
+	//////////////////////////////
+	void initialize();
+	void updateDisplay();
+	void finish();
 };
 #endif // DISPLAYMODULE_HPP

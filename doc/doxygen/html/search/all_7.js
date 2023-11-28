@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['run_0',['run',['../class_application.html#a6815195c956c091a6558a316f8fd9976',1,'Application::run()'],['../class_i_application.html#a89be99fa4c296edc38dd8b4bc015c377',1,'IApplication::run()']]]
+  ['main_0',['main',['../_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'Main.cpp']]],
+  ['main_2ecpp_1',['Main.cpp',['../_main_8cpp.html',1,'']]]
 ];

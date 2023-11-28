@@ -1,7 +1,7 @@
 #ifndef INPUTMODULE_HPP
 #define INPUTMODULE_HPP
 
-#include "Modules/IModule.hpp"
+#include <GLFW/glfw3.h>
 
 #include "OIS/OIS.h"
 #include "OIS/OISInputManager.h"
@@ -12,24 +12,31 @@
 #include "OIS/OISEvents.h"
 
 #include <iostream>
-#include <vector>
-#include <sstream>
 #include <functional>
 
-class InputModule : public IModule
+class InputModule
 {
 private:
+	GLFWwindow* p_Window;
+	std::function<void(int, int)> f_onInput;
 public:
 	//////////////////////////////
 	// Constructors/Destructors //
 	//////////////////////////////
 	InputModule();
-	~InputModule() override;
+	~InputModule();
 
 	//////////////////////////////
-	//          Pipeline		//
+	//         Life cycle		//
 	//////////////////////////////
-	void initialize() override;
-	void finish() override;
+	void initialize(GLFWwindow* p_Window);
+	void pollEvents();
+	void finish();
+
+	//////////////////////////////
+	//      Input callback		//
+	//////////////////////////////
+	void setHandleInputCallback(const std::function<void(int, int)>& callback);
+	void handleInput(int key, int action);
 };
 #endif // INPUTMODULE_HPP

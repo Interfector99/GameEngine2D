@@ -1,16 +1,13 @@
 #ifndef APPLICATION_HPP
 #define APPLICATION_HPP
 
-// Interface
-#include "Application/IApplication.hpp"
-
 // Modules
 #include "Modules/InputModule/InputModule.hpp"
 #include "Modules/DisplayModule/DisplayModule.hpp"
 
 #include <iostream>
 
-class Application : public IApplication
+class Application
 {
 private:
 	enum class STATE
@@ -27,20 +24,20 @@ public:
 	// Constructors/Destructors //
 	//////////////////////////////
 	Application();
-	~Application() override;
+	~Application();
 
 	//////////////////////////////
-	//          Pipeline		//
+	//         Life cycle		//
 	//////////////////////////////
-	void executePipeline() override;
-	void initialize() override;
-	void run() override;
-	void finish() override;
+	void executePipeline();
+	void initialize();
+	void run();
+	void finish();
 
 	//////////////////////////////
 	//      Module callbacks	//
 	//////////////////////////////
-	void handleInput(int key, int action) override;
+	void handleInput(int key, int action);
 };
 
 #endif // APPLICATION_HPP

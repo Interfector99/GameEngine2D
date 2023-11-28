@@ -16,7 +16,7 @@ Application::~Application()
 }
 
 //////////////////////////////
-//          Pipeline		//
+//         Life cycle		//
 //////////////////////////////
 void Application::executePipeline()
 {
@@ -29,8 +29,8 @@ void Application::initialize()
 {
 	std::cout << "Application instance initialized" << std::endl;
 	m_DisplayModule.initialize();
-	m_InputModule.initialize();
-	m_DisplayModule.setHandleInputCallback([this](int key, int action)
+	m_InputModule.initialize(m_DisplayModule.getWindow());
+	m_InputModule.setHandleInputCallback([this](int key, int action)
 	{
 		handleInput(key, action);
 	});
@@ -43,7 +43,8 @@ void Application::run()
 
 	while (e_State == STATE::RUNNING)
 	{
-		m_DisplayModule.update();
+		m_InputModule.pollEvents();
+		m_DisplayModule.updateDisplay();
 	}
 
 	std::cout << "Application instance stopped running" << std::endl;
