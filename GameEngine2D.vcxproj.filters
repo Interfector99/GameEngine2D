@@ -67,6 +67,12 @@
     <Filter Include="Source Files\Src\Modules\GraphicsModule">
       <UniqueIdentifier>{cb1c0526-0bf7-42de-b296-95f75cc16b03}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Src\Modules\ResourceModule">
+      <UniqueIdentifier>{7fffa6f0-5875-40ff-838c-b6e306dbf829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Src\Modules\ResourceModule">
+      <UniqueIdentifier>{94343c7b-1ddd-4ada-b1a2-82bead31581e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp">
@@ -111,6 +117,9 @@
     <ClCompile Include="src\Modules\GraphicsModule\GraphicsModule.cpp">
       <Filter>Source Files\Src\Modules\GraphicsModule</Filter>
     </ClCompile>
+    <ClCompile Include="src\Modules\ResourceModule\ResourceModule.cpp">
+      <Filter>Source Files\Src\Modules\ResourceModule</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Libraries\stb_image\stb_image.h">
@@ -154,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="include\Modules\GraphicsModule\GraphicsModule.hpp">
       <Filter>Header Files\Src\Modules\GraphicsModule</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Modules\ResourceModule\ResourceModule.hpp">
+      <Filter>Header Files\Src\Modules\ResourceModule</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

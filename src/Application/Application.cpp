@@ -28,6 +28,9 @@ void Application::executePipeline()
 void Application::initialize()
 {
 	std::cout << "Application instance initialized" << std::endl;
+	m_ResourceModule.initialize();
+	std::string filePath = "C:/Interfector99/Work/Public/GameEngine2D/assets/config/display.ini";
+	m_ResourceModule.readDisplayConfig(filePath);
 	m_DisplayModule.initialize();
 
 	m_InputModule.initialize(m_DisplayModule.getWindow());
@@ -61,6 +64,7 @@ void Application::finish()
 	m_GraphicsModule.finish();
 	m_InputModule.finish();
 	m_DisplayModule.finish();
+	m_ResourceModule.finish();
 }
 
 //////////////////////////////

@@ -1,7 +1,7 @@
 #ifndef DISPLAYMODULE_HPP
 #define DISPLAYMODULE_HPP
 
-#define FPS 30
+#define FPS 60
 #define FRAME_TARGET_TIME (1 / FPS)
 
 #include <GLFW/glfw3.h>

@@ -194,6 +194,7 @@
     <ClCompile Include="src\Modules\DisplayModule\DisplayModule.cpp" />
     <ClCompile Include="src\Modules\GraphicsModule\GraphicsModule.cpp" />
     <ClCompile Include="src\Modules\InputModule\InputModule.cpp" />
+    <ClCompile Include="src\Modules\ResourceModule\ResourceModule.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imconfig.h" />
@@ -210,6 +211,7 @@
     <ClInclude Include="include\Modules\DisplayModule\DisplayModule.hpp" />
     <ClInclude Include="include\Modules\GraphicsModule\GraphicsModule.hpp" />
     <ClInclude Include="include\Modules\InputModule\InputModule.hpp" />
+    <ClInclude Include="include\Modules\ResourceModule\ResourceModule.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

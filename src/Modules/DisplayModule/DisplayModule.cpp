@@ -12,6 +12,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 //////////////////////////////
 DisplayModule::DisplayModule()
 {
+	p_Window = NULL;
 	std::cout << "	DisplayModule instance created" << std::endl;
 }
 
@@ -59,7 +60,8 @@ void DisplayModule::updateDisplay()
 
 	// Only delay execution if we are running too fast
 	// (Gives up resources to other processes)
-	if (time_to_wait > 0 && time_to_wait <= FRAME_TARGET_TIME) {
+	if (time_to_wait > 0 && time_to_wait <= FRAME_TARGET_TIME) 
+	{
 		std::this_thread::sleep_for(std::chrono::milliseconds(time_to_wait));
 	}
 
