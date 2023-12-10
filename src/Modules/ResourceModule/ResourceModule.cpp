@@ -18,10 +18,13 @@ ResourceModule::~ResourceModule()
 void ResourceModule::initialize()
 {
 	std::cout << "	ResourceModule instance initialized" << std::endl;
+    config = "";
 }
 
-void ResourceModule::readDisplayConfig(std::string& filePath)
+void ResourceModule::readDisplayConfig()
 {
+    std::string filePath = "C:/Interfector99/Work/Public/GameEngine2D/assets/config/display.ini";
+
     std::cout << "ResourceModule instance reading display config file\n";
 
     // Open the file using the file path
@@ -45,7 +48,7 @@ void ResourceModule::readDisplayConfig(std::string& filePath)
             // Extract the value from the line
             if (std::getline(is_line, value))
             {
-                std::cout << "key: " << key << " value: " << value << '\n';
+                config += value + "\n";
             }
         }
     }

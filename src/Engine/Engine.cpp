@@ -1,15 +1,15 @@
-#include "Application/Application.hpp"
+#include "Engine/Engine.hpp"
 
 //////////////////////////////
 // Constructors/Destructors //
 //////////////////////////////
-Application::Application()
+Engine::Engine()
 {
 	std::cout << "Application instance created" << std::endl;
 	e_State = STATE::ON;
 }
 
-Application::~Application()
+Engine::~Engine()
 {
 	std::cout << "Application instance destroyed" << std::endl;
 	e_State = STATE::OFF;
@@ -18,20 +18,20 @@ Application::~Application()
 //////////////////////////////
 //         Life cycle		//
 //////////////////////////////
-void Application::executePipeline()
+void Engine::executePipeline()
 {
 	initialize();
 	run();
 	finish();
 }
 
-void Application::initialize()
+void Engine::initialize()
 {
 	std::cout << "Application instance initialized" << std::endl;
 	m_ResourceModule.initialize();
-	std::string filePath = "C:/Interfector99/Work/Public/GameEngine2D/assets/config/display.ini";
-	m_ResourceModule.readDisplayConfig(filePath);
-	m_DisplayModule.initialize();
+	
+	m_ResourceModule.readDisplayConfig();
+	m_DisplayModule.initialize(m_ResourceModule.config);
 
 	m_InputModule.initialize(m_DisplayModule.getWindow());
 	m_InputModule.setHandleInputCallback([this](int key, int action)
@@ -42,7 +42,7 @@ void Application::initialize()
 	m_GraphicsModule.initialize();
 }
 
-void Application::run()
+void Engine::run()
 {
 	std::cout << "Application instance started running" << std::endl;
 	e_State = STATE::RUNNING;
@@ -57,7 +57,7 @@ void Application::run()
 	std::cout << "Application instance stopped running" << std::endl;
 }
 
-void Application::finish()
+void Engine::finish()
 {
 	std::cout << "Application instance finished" << std::endl;
 	e_State = STATE::OFF;
@@ -70,7 +70,7 @@ void Application::finish()
 //////////////////////////////
 //      Module callbacks	//
 //////////////////////////////
-void Application::handleInput(int key, int action)
+void Engine::handleInput(int key, int action)
 {
 	std::cout << "Application received input: Key = " << key << ", Action = " << action << std::endl;
 	if (key == GLFW_KEY_Q && action == GLFW_PRESS)

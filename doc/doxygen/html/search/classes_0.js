@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['application_0',['Application',['../class_application.html',1,'']]]
+  ['displaymodule_0',['DisplayModule',['../class_display_module.html',1,'']]]
 ];

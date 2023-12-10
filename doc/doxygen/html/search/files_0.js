@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['application_2ecpp_0',['Application.cpp',['../_application_8cpp.html',1,'']]],
-  ['application_2ehpp_1',['Application.hpp',['../_application_8hpp.html',1,'']]]
+  ['displaymodule_2ecpp_0',['DisplayModule.cpp',['../_display_module_8cpp.html',1,'']]],
+  ['displaymodule_2ehpp_1',['DisplayModule.hpp',['../_display_module_8hpp.html',1,'']]]
 ];

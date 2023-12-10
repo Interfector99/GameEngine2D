@@ -11,6 +11,12 @@ class ResourceModule
 private:
 public:
 	//////////////////////////////
+	//	 Data for the modules	//
+	//////////////////////////////
+	std::string config;
+
+
+	//////////////////////////////
 	// Constructors/Destructors //
 	//////////////////////////////
 	ResourceModule();
@@ -20,7 +26,7 @@ public:
 	//         Life cycle		//
 	//////////////////////////////
 	void initialize();
-	void readDisplayConfig(std::string& filePath);
+	void readDisplayConfig();
 	void finish();
 };
 #endif // RESOURCEMODULE_HPP

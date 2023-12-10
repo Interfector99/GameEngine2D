@@ -9,7 +9,7 @@
 
 #include <iostream>
 
-class Application
+class Engine
 {
 private:
 	enum class STATE
@@ -27,8 +27,8 @@ public:
 	//////////////////////////////
 	// Constructors/Destructors //
 	//////////////////////////////
-	Application();
-	~Application();
+	Engine();
+	~Engine();
 
 	//////////////////////////////
 	//         Life cycle		//

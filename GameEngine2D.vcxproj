@@ -189,8 +189,8 @@
     <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_tables.cpp" />
     <ClCompile Include="..\..\..\Libraries\imgui\include\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp" />
-    <ClCompile Include="src\Application\Application.cpp" />
-    <ClCompile Include="src\Application\Main.cpp" />
+    <ClCompile Include="src\Engine\Engine.cpp" />
+    <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Modules\DisplayModule\DisplayModule.cpp" />
     <ClCompile Include="src\Modules\GraphicsModule\GraphicsModule.cpp" />
     <ClCompile Include="src\Modules\InputModule\InputModule.cpp" />
@@ -207,7 +207,7 @@
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_textedit.h" />
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_truetype.h" />
     <ClInclude Include="..\..\..\Libraries\stb_image\stb_image.h" />
-    <ClInclude Include="include\Application\Application.hpp" />
+    <ClInclude Include="include\Engine\Engine.hpp" />
     <ClInclude Include="include\Modules\DisplayModule\DisplayModule.hpp" />
     <ClInclude Include="include\Modules\GraphicsModule\GraphicsModule.hpp" />
     <ClInclude Include="include\Modules\InputModule\InputModule.hpp" />

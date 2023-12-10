@@ -24,19 +24,31 @@ DisplayModule::~DisplayModule()
 //////////////////////////////
 //         Life cycle		//
 //////////////////////////////
-void DisplayModule::initialize()
+void DisplayModule::initialize(std::string config)
 {
+	
 	std::cout << "	DisplayModule instance initialized" << std::endl;
+
+	std::vector<std::string> lines;
+	std::string line;
+	std::istringstream iss(config);
+	while (std::getline(iss, line))
+	{
+		lines.push_back(line);
+	}
+
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	p_Window = glfwCreateWindow(800, 800, "LearnOpenGL", NULL, NULL);
+	glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+	p_Window = glfwCreateWindow(std::stoi(lines[2]), std::stoi(lines[3]), "Shaman Engine", NULL, NULL);
 	if (p_Window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();
 	}
+	
 	glfwMakeContextCurrent(p_Window);
 	glfwSetFramebufferSizeCallback(p_Window, framebuffer_size_callback);
 }

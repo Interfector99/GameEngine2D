@@ -31,7 +31,7 @@ public:
 	//////////////////////////////
 	//         Life cycle		//
 	//////////////////////////////
-	void initialize();
+	void initialize(std::string config);
 	void updateDisplay();
 	void finish();
 };

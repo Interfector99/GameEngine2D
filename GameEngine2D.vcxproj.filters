@@ -37,12 +37,6 @@
     <Filter Include="Source Files\Src">
       <UniqueIdentifier>{82f02057-fb67-4d0f-a381-418f0c3d428c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Src\Application">
-      <UniqueIdentifier>{e9e4c3d2-c67e-4cde-b413-c390fb50606b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Src\Application">
-      <UniqueIdentifier>{e088d486-96a3-4da4-a461-e7a6d2bc5321}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Src\Modules">
       <UniqueIdentifier>{22569b45-bb05-4fcf-8872-f89a126c52b3}</UniqueIdentifier>
     </Filter>
@@ -73,6 +67,12 @@
     <Filter Include="Source Files\Src\Modules\ResourceModule">
       <UniqueIdentifier>{94343c7b-1ddd-4ada-b1a2-82bead31581e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Src\Engine">
+      <UniqueIdentifier>{e9e4c3d2-c67e-4cde-b413-c390fb50606b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Src\Engine">
+      <UniqueIdentifier>{e088d486-96a3-4da4-a461-e7a6d2bc5321}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Libraries\stb_image\stb_image.cpp">
@@ -102,12 +102,6 @@
     <ClCompile Include="..\..\..\Libraries\glad\glad.c">
       <Filter>Source Files\Lib</Filter>
     </ClCompile>
-    <ClCompile Include="src\Application\Application.cpp">
-      <Filter>Source Files\Src\Application</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Application\Main.cpp">
-      <Filter>Source Files\Src\Application</Filter>
-    </ClCompile>
     <ClCompile Include="src\Modules\InputModule\InputModule.cpp">
       <Filter>Source Files\Src\Modules\InputModule</Filter>
     </ClCompile>
@@ -119,6 +113,12 @@
     </ClCompile>
     <ClCompile Include="src\Modules\ResourceModule\ResourceModule.cpp">
       <Filter>Source Files\Src\Modules\ResourceModule</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Engine.cpp">
+      <Filter>Source Files\Src\Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -152,9 +152,6 @@
     <ClInclude Include="..\..\..\Libraries\imgui\include\imgui\imstb_truetype.h">
       <Filter>Header Files\Lib\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="include\Application\Application.hpp">
-      <Filter>Header Files\Src\Application</Filter>
-    </ClInclude>
     <ClInclude Include="include\Modules\InputModule\InputModule.hpp">
       <Filter>Header Files\Src\Modules\InputModule</Filter>
     </ClInclude>
@@ -166,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="include\Modules\ResourceModule\ResourceModule.hpp">
       <Filter>Header Files\Src\Modules\ResourceModule</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engine\Engine.hpp">
+      <Filter>Header Files\Src\Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
