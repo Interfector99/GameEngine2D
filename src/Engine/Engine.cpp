@@ -39,6 +39,8 @@ void Engine::initialize()
 		handleInput(key, action);
 	});
 
+	m_NetworkModule.initialize();
+
 	m_GraphicsModule.initialize();
 }
 
@@ -50,6 +52,7 @@ void Engine::run()
 	while (e_State == STATE::RUNNING)
 	{
 		m_InputModule.pollEvents();
+		m_NetworkModule.update();
 		m_DisplayModule.updateDisplay();
 		m_GraphicsModule.renderGraphics();
 	}
@@ -63,6 +66,7 @@ void Engine::finish()
 	e_State = STATE::OFF;
 	m_GraphicsModule.finish();
 	m_InputModule.finish();
+	m_NetworkModule.finish();
 	m_DisplayModule.finish();
 	m_ResourceModule.finish();
 }

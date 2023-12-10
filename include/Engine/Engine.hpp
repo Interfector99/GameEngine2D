@@ -6,6 +6,7 @@
 #include "Modules/InputModule/InputModule.hpp"
 #include "Modules/GraphicsModule/GraphicsModule.hpp"
 #include "Modules/ResourceModule/ResourceModule.hpp"
+#include "Modules/NetworkModule/NetworkModule.hpp"
 
 #include <iostream>
 
@@ -23,6 +24,7 @@ private:
 	DisplayModule m_DisplayModule;
 	GraphicsModule m_GraphicsModule;
 	ResourceModule m_ResourceModule;
+	NetworkModule m_NetworkModule;
 public:
 	//////////////////////////////
 	// Constructors/Destructors //

@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['_7eapplication_0',['~Application',['../class_application.html#a444b0b6d9162b14d5262b81bd75586df',1,'Application']]],
-  ['_7egraphicsmanager_1',['~GraphicsManager',['../class_graphics_manager.html#a1980d888317c3ceffaafb0170418bb8b',1,'GraphicsManager']]],
-  ['_7eiapplication_2',['~IApplication',['../class_i_application.html#a81859b4bfb89d53ba851789c806af299',1,'IApplication']]],
-  ['_7eimanager_3',['~IManager',['../class_i_manager.html#a202714648a0d1845f9bc12c684f63031',1,'IManager']]],
-  ['_7eimessagerouter_4',['~IMessageRouter',['../class_i_message_router.html#ad34991464e30105873706ddf2c806be7',1,'IMessageRouter']]],
-  ['_7einputmanager_5',['~InputManager',['../class_input_manager.html#ac07b6252aae165bce8f3608d23761ecf',1,'InputManager']]],
-  ['_7emessagerouter_6',['~MessageRouter',['../class_message_router.html#abb15d083974fd214a0551ba034f76fd8',1,'MessageRouter']]]
+  ['_7edisplaymodule_0',['~DisplayModule',['../class_display_module.html#a643d63e19aa6945d10f8ef61520c21ac',1,'DisplayModule']]],
+  ['_7eengine_1',['~Engine',['../class_engine.html#a8ef7030a089ecb30bbfcb9e43094717a',1,'Engine']]],
+  ['_7egraphicsmodule_2',['~GraphicsModule',['../class_graphics_module.html#a0d23f93bd0aef4b1fe7530ab86d81208',1,'GraphicsModule']]],
+  ['_7einputmodule_3',['~InputModule',['../class_input_module.html#a793e3d936342fb9301dc69e937c075f3',1,'InputModule']]],
+  ['_7enetworkmodule_4',['~NetworkModule',['../class_network_module.html#a2b5a634c0b0e1f8e2b5481ce43acaf45',1,'NetworkModule']]],
+  ['_7eresourcemodule_5',['~ResourceModule',['../class_resource_module.html#a56eb8ba524f8ebf85176da2a4d05d879',1,'ResourceModule']]]
 ];

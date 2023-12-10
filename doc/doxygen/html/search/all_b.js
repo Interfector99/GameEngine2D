@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatedisplay_0',['updateDisplay',['../class_display_module.html#a8b7b33b8d2288ed59b0f785d1fc4c711',1,'DisplayModule']]]
+  ['sethandleinputcallback_0',['setHandleInputCallback',['../class_input_module.html#a90ae26f71e5cbe72eea22cd2531e45b1',1,'InputModule']]]
 ];
