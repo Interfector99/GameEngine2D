@@ -5,8 +5,7 @@ project ("ShamanEngine2D")
 # Set engine directories and sources
 set(SHAMAN_ENGINE_2D_INCLUDE_DIR "Engine/include")
 set(SHAMAN_ENGINE_2D_SOURCES 
-    "Engine/Main.cpp"
-    "Engine/glad.c"
+    "Engine/src/Main.cpp"
     "Engine/src/ShamanEngine2D.cpp")
 
 # Set module directories and sources
@@ -22,6 +21,7 @@ set(GLFW_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/lib/GLFW/include")
 set(GLFW_LIBRARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/lib/GLFW/lib")
 
 set(GLAD_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/lib/GLAD/include")
+set(GLAD_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/lib/GLAD/glad.c")
 
 # Add all source files to this project's executable.
 add_executable(ShamanEngine2D 
@@ -29,7 +29,9 @@ add_executable(ShamanEngine2D
                ${MODULE_HEADERS} 
                ${MODULE_SOURCES}
                ${HELPER_HEADERS}
-               ${HELPER_SOURCES})
+               ${HELPER_SOURCES}
+                
+               ${GLAD_SOURCE_DIR})
 
 # Include directories
 target_include_directories(ShamanEngine2D PRIVATE 
