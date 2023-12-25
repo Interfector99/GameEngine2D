@@ -1,15 +1,30 @@
-#ifndef EXCEPTIONS_HPP_INCLUDED
-#define EXCEPTIONS_HPP_INCLUDED
+#ifndef EXCEPTIONS_HPP
+#define EXCEPTIONS_HPP
 
 #include <exception>
+#include <string>
 
 class GLFWException : public std::exception 
 {
+private:
+	std::string error;
 public:
-	const char* what() const noexcept 
+	GLFWException(std::string error) : error(error) {}
+	const char* what() const noexcept
 	{ 
-		return "GLFW exception!"; 
+		return ("GLFW exception: " + error).c_str();
 	}
 };
 
-#endif // EXCEPTIONS_HPP_INCLUDED
+class FileException : public std::exception
+{
+public:
+	std::string error;
+	FileException(std::string error) : error(error) {}
+	const char* what() const noexcept
+	{
+		return ("File exception: " + error).c_str();
+	}
+};
+
+#endif // EXCEPTIONS_HPP

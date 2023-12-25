@@ -26,6 +26,9 @@ void InputManager::initialize(ShamanEngine2D* parent, GLFWwindow* window)
 
 void InputManager::update()
 {
+	glfwPollEvents();
+
+	handleGLFWInput();
 	handleKeyboardInput();
 	handleMouseInput();
 	handleJoystickInput();
@@ -39,6 +42,14 @@ void InputManager::shutdown()
 //////////////////////////////////
 // 	  Handle Input Functions    //
 //////////////////////////////////
+void InputManager::handleGLFWInput()
+{
+	if (glfwWindowShouldClose(p_Window))
+	{
+		p_Parent->setState(STATE::OFF);
+	}
+}
+
 void InputManager::handleKeyboardInput()
 {
 	if (glfwGetKey(p_Window, GLFW_KEY_ESCAPE) == GLFW_PRESS)

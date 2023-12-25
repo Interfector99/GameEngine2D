@@ -3,6 +3,7 @@
 
 class ShamanEngine2D;
 
+// need glfw include or else glad fails???
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 

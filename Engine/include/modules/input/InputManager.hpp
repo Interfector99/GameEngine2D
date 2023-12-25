@@ -28,6 +28,7 @@ private:
     //////////////////////////////////
     // 	  Handle Input Functions    //
     //////////////////////////////////
+    void handleGLFWInput();
     void handleKeyboardInput();
     void handleMouseInput();
     void handleJoystickInput();
