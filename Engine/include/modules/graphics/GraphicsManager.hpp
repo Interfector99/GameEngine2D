@@ -1,11 +1,11 @@
 #ifndef GRAPHICSMANAGER_HPP
 #define GRAPHICSMANAGER_HPP
+// need glfw include or else glad fails???
+#include <GLFW/glfw3.h>
 
 class ShamanEngine2D;
 
-// need glfw include or else glad fails???
-#include <GLFW/glfw3.h>
-#include <glad/glad.h>
+#include "Shader.hpp"
 
 #include <iostream>
 
@@ -13,6 +13,8 @@ class GraphicsManager
 {
 private:
     ShamanEngine2D* p_Parent;
+
+    Shader m_Shader;
 
 public:
     //////////////////////////////////

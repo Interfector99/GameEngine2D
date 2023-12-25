@@ -89,7 +89,6 @@ void DisplayManager::loadConfig()
 			else if (key == "resizeable")
 			{
 				m_Config.resizable = Parsing::string_to_bool(value);
-				std::cout << "resizeable : " << m_Config.resizable << std::endl;
 			}
 			else if (key == "decorated")
 			{
