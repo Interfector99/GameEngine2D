@@ -10,8 +10,12 @@ set(SHAMAN_ENGINE_2D_SOURCES
     "Engine/src/ShamanEngine2D.cpp")
 
 # Set module directories and sources
-set(MODULE_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/include/modules")
-file(GLOB MODULE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/src/modules/*.cpp")
+file(GLOB_RECURSE MODULE_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/Engine/include/modules/**/*.hpp")
+file(GLOB_RECURSE MODULE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/Engine/src/modules/**/*.cpp")
+
+# Set helper directories and sources
+file(GLOB_RECURSE HELPER_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/Engine/include/helper/**/*.hpp")
+file(GLOB_RECURSE HELPER_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/Engine/src/helper/**/*.cpp")
 
 # Set third-party directories and libraries
 set(GLFW_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/lib/GLFW/include")
@@ -19,24 +23,24 @@ set(GLFW_LIBRARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/lib/GLFW/lib")
 
 set(GLAD_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Engine/lib/GLAD/include")
 
-
 # Add all source files to this project's executable.
-add_executable( ShamanEngine2D 
-                ${SHAMAN_ENGINE_2D_SOURCES} 
-                ${MODULE_SOURCE_DIR})
+add_executable(ShamanEngine2D 
+               ${SHAMAN_ENGINE_2D_SOURCES} 
+               ${MODULE_HEADERS} 
+               ${MODULE_SOURCES}
+               ${HELPER_HEADERS}
+               ${HELPER_SOURCES})
 
-# Include engine directories
-target_include_directories(ShamanEngine2D PRIVATE ${SHAMAN_ENGINE_2D_INCLUDE_DIR})
+# Include directories
+target_include_directories(ShamanEngine2D PRIVATE 
+                           ${SHAMAN_ENGINE_2D_INCLUDE_DIR}
 
-# Include module directories
-target_include_directories(ShamanEngine2D PRIVATE ${MODULE_INCLUDE_DIR})
+                           ${GLFW_INCLUDE_DIR}
+                           ${GLAD_INCLUDE_DIR})
 
 # Include third-party directories and libraries
-target_include_directories(ShamanEngine2D PRIVATE ${GLFW_INCLUDE_DIR})
 target_link_directories(ShamanEngine2D PRIVATE ${GLFW_LIBRARY_DIR})
 target_link_libraries(ShamanEngine2D PRIVATE glfw3)
-
-target_include_directories(ShamanEngine2D PRIVATE ${GLAD_INCLUDE_DIR})
 
 # Enable Hot Reload for MSVC compilers if supported.
 if (POLICY CMP0141)

@@ -1,4 +1,4 @@
-#include "Modules/InputManager.hpp"
+#include "modules/input/InputManager.hpp"
 #include "ShamanEngine2D.hpp"
 
 //////////////////////////////////

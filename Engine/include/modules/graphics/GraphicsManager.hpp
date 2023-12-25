@@ -24,7 +24,7 @@ public:
     // 			Functions           //
     //////////////////////////////////
     void initialize(ShamanEngine2D* parent);
-    void update();
+    void render();
     void shutdown();
 };
 

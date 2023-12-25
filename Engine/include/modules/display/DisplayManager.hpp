@@ -4,6 +4,8 @@
 
 class ShamanEngine2D;
 
+#include "helper/exception/Exception.hpp"
+
 #include <GLFW/glfw3.h>
 
 class DisplayManager

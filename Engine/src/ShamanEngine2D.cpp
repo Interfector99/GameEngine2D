@@ -5,7 +5,7 @@
 //////////////////////////////////
 ShamanEngine2D::ShamanEngine2D()
 {
-
+	e_State = STATE::OFF;
 }
 ShamanEngine2D::~ShamanEngine2D()
 {
@@ -17,7 +17,7 @@ ShamanEngine2D::~ShamanEngine2D()
 //////////////////////////////////
 void ShamanEngine2D::initialize()
 {
-	m_state = STATE::OFF;
+	e_State = STATE::OFF;
 	m_DisplayManager.initialize(this);
 	m_InputManager.initialize(this, m_DisplayManager.getWindow());
 	m_GraphicsManager.initialize(this);
@@ -25,21 +25,21 @@ void ShamanEngine2D::initialize()
 
 void ShamanEngine2D::run()
 {
-	m_state = STATE::RUNNING;
-	while (m_state == STATE::RUNNING)
+	e_State = STATE::RUNNING;
+	while (e_State == STATE::RUNNING)
 	{
 		m_InputManager.update();
 		m_DisplayManager.update();
-		m_GraphicsManager.update();
-		
+		m_GraphicsManager.render();
 	}
 }
+
 void ShamanEngine2D::shutdown()
 {
-	m_state = STATE::OFF;
+	e_State = STATE::OFF;
+	m_GraphicsManager.shutdown();
 	m_InputManager.shutdown();
 	m_DisplayManager.shutdown();
-	m_GraphicsManager.shutdown();
 }
 
 //////////////////////////////////
@@ -47,5 +47,5 @@ void ShamanEngine2D::shutdown()
 //////////////////////////////////
 void ShamanEngine2D::setState(STATE state)
 {
-	m_state = state;
+	e_State = state;
 }

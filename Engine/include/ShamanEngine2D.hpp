@@ -1,9 +1,9 @@
 #ifndef SHAMANENGINE2D_HPP
 #define SHAMANENGINE2D_HPP
 
-#include "Modules/DisplayManager.hpp"
-#include "Modules/InputManager.hpp"
-#include "Modules/GraphicsManager.hpp"
+#include "modules/display/DisplayManager.hpp"
+#include "modules/input/InputManager.hpp"
+#include "modules/graphics/GraphicsManager.hpp"
 
 #include <iostream>
 
@@ -16,7 +16,7 @@ enum class STATE
 class ShamanEngine2D
 {
 private:
-	STATE m_state;
+	STATE e_State;
 
 	DisplayManager m_DisplayManager;
 	InputManager m_InputManager;

@@ -1,4 +1,4 @@
-#include "Modules/GraphicsManager.hpp"
+#include "modules/graphics/GraphicsManager.hpp"
 #include "ShamanEngine2D.hpp"
 
 //////////////////////////////////
@@ -27,9 +27,9 @@ void GraphicsManager::initialize(ShamanEngine2D* parent)
     }
 }
 
-void GraphicsManager::update()
+void GraphicsManager::render()
 {
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    glClearColor(0.4f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 }
 

@@ -1,4 +1,4 @@
-#include "Modules/DisplayManager.hpp"
+#include "modules/display/DisplayManager.hpp"
 #include "ShamanEngine2D.hpp"
 
 //////////////////////////////////
@@ -28,7 +28,7 @@ void DisplayManager::initialize(ShamanEngine2D* parent)
 	p_Window = glfwCreateWindow(800, 800, "GameEngine2D", NULL, NULL);
 	if (p_Window == NULL)
 	{
-		glfwTerminate();
+		throw GLFWException();
 	}
 
 	glfwMakeContextCurrent(p_Window);
@@ -36,7 +36,6 @@ void DisplayManager::initialize(ShamanEngine2D* parent)
 
 void DisplayManager::update()
 {
-
 	glfwPollEvents();
 	glfwSwapBuffers(p_Window);
 }
